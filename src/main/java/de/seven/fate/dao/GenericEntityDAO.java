@@ -181,7 +181,7 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
         em.remove(e);
     }
 
-    private List<E> list() {
+    public List<E> list() {
 
         CriteriaBuilder builder = em.getCriteriaBuilder();
 
