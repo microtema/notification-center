@@ -7,9 +7,9 @@
 	<persistence-unit name="wcmsds" transaction-type="JTA">
 		<jta-data-source>java:jboss/datasources/wcmsds</jta-data-source>
 		<properties>
-			<property name="hibernate.dialect" value="${hibernate.dialect}" />
-			<property name="hibernate.hbm2ddl.auto" value="${hibernate.hbm2ddl.auto}" />
-			<property name="hibernate.show_sql" value="${hibernate.show_sql}" />
+			<property name="hibernate.dialect" value="org.hibernate.dialect.SQLServerDialect" />
+			<property name="hibernate.hbm2ddl.auto" value="update" />
+			<property name="hibernate.show_sql" value="true" />
 			<property name="hibernate.format_sql" value="true" />
 			<property name="hibernate.generate_statistics" value="true"/>
 			<property name="hibernate.cache.use_second_level_cache" value="false"/>
