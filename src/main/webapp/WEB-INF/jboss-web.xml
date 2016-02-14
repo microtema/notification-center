@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jboss-web>
+	<context-root>/</context-root>
+	<security-domain>form-auth</security-domain>
+	<symbolic-linking-enabled>true</symbolic-linking-enabled>
+</jboss-web>

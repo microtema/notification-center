@@ -1,0 +1,24 @@
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+	<display-name>Message Notification Center</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<!-- Configuration values -->
+	<!-- The entries are configured in the according profile. For user specific 
+		settings please use your settings.xml. An example is provided in the documentation. -->
+	<env-entry>
+		<env-entry-name>java:global/EXPORT_PATH</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>${jndi.export_path}</env-entry-value>
+	</env-entry>
+	<env-entry>
+		<env-entry-name>java:global/IMPORT_PATH</env-entry-name>
+		<env-entry-type>java.lang.String</env-entry-type>
+		<env-entry-value>${jndi.import_path}</env-entry-value>
+	</env-entry>
+
+</web-app>

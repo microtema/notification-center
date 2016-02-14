@@ -1,0 +1,1865 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uxb_entity uuid="1" language="EN" destinations="hibernate"
+	command="sync" objectType="apps" path="#uxb/app_all/UXB/EN" createTime="1373887259671"
+	schedulerId="7806" projectId="7796" startTime="1373890426247">
+	<uxb_content>
+		<red-bull-Apps>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3152]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[My Outlook]]></title>
+				<directive><![CDATA[{"title":"My Outlook","link":"https://owa.qq.redbull.com/owa/", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/my_outlook_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/my_outlook_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Outlook web interface]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Images/my_outlook_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/my_outlook_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/App-Images/my_outlook_AppTeaserImage.png]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/App-Images/my_outlook_appModuleIcon.png]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions><![CDATA[SVCG3900]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3144]]></fsid>
+				<type><![CDATA[feed-widget]]></type>
+				<title><![CDATA[Hotspot News Feed]]></title>
+				<directive><![CDATA[{"title":"Hotspot News Feed","size":"8", "mode":"grid", "hideControls":"false", "removable":"true", "editable":"false", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2", "feedSource":"https://infonet-services-staging.redbull.com:4444/restful-services/news/rss", "user":"rssnews", "password":"Rvi2hQ$X74.qpRx", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png"}]]></directive>
+				<description><![CDATA[Hotspot News Feed from InfoNet.]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-news-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/App-Images/infonet-news-300x300_appModuleIcon.png]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3143]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Learn to Fly]]></title>
+				<directive><![CDATA[{"title":"Learn to Fly","link":"http://onboarding-stage.rbc2.hk-net.de/local/", "img":"https://tibbr.redbull.com/q/media/Apps/icon_300x310_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_300x310_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Welcome to the world of Red Bull. Your journey starts right here!]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/icon_300x310_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/icon_300x310_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/icon_300x310_AppTeaserImage.png]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/icon_300x310_appModuleIcon.png]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Human Resources]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3142]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Consumer Products]]></title>
+				<directive><![CDATA[{"title":"Consumer Products","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdconsumer/MerchandisingModule/ShowMerchandisingStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/h7mag_collage3a_lay_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/h7mag_collage3a_lay_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Former Consumer Products (Merchandising / Licensing) Section from InfoNet.]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdconsumer/MerchandisingModule/ShowMerchandisingStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/h7mag_collage3a_lay_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/h7mag_collage3a_lay_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/h7mag_collage3a_lay_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/h7mag_collage3a_lay_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Theresa Zainer]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3141]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[App # 5]]></title>
+				<directive><![CDATA[{"title":"App # 5","link":"http://translate.google.com/#tr/ar/", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_red_bull_logo_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_red_bull_logo_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Takes you to Ibrahim's translate service]]></description>
+				<startpagelink><![CDATA[http://translate.google.com/#tr/ar/]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_red_bull_logo_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_red_bull_logo_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/App-Finder-Icons/infonet-teamrooms-70x70_AppTeaserImage.png]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/App-Finder-Icons/infonet-teamrooms-70x70_appModuleIcon.png]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[dmoltner]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Training]]></topics>
+				<departments />
+				<geographical />
+				<permissions><![CDATA[SVCG3003,SVCG3004]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3140]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Google Translate 1]]></title>
+				<directive><![CDATA[{"title":"Google Translate 1","link":"https://translate.google.com", "img":"https://tibbr.redbull.com/q/media/Training/fire_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Training/fire_AppPictureSmall.jpg"}]]></directive>
+				<description />
+				<startpagelink><![CDATA[https://translate.google.com]]></startpagelink>
+				<image><![CDATA[/media/Training/fire_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Training/fire_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/20100705_006_2_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/20100705_006_2_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[bmutinelli]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Training]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions><![CDATA[SVCG3004]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3139]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Google Translate 2]]></title>
+				<directive><![CDATA[{"title":"Google Translate 2","link":"http://translate.google.com/", "img":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Manschis Translator]]></description>
+				<startpagelink><![CDATA[http://translate.google.com/]]></startpagelink>
+				<image><![CDATA[/media/Apps/icon_sports_300x300_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/icon_sports_300x300_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[2]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[estelzer]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Training]]></topics>
+				<departments />
+				<geographical />
+				<permissions><![CDATA[SVCG3003,SVCG3004]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3138]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Google Translate 4]]></title>
+				<directive><![CDATA[{"title":"Google Translate 4","link":"https://translate.google.com/", "img":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Takes you to the Google Translate service of Ibrahim.]]></description>
+				<startpagelink><![CDATA[https://translate.google.com/]]></startpagelink>
+				<image><![CDATA[/media/Apps/icon_sports_300x300_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/icon_sports_300x300_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/Apps/icon_sports_300x300_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/Apps/icon_sports_300x300_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[iisik]]></contact>
+				<device />
+				<topics><![CDATA[Training]]></topics>
+				<departments />
+				<geographical />
+				<permissions><![CDATA[SVCG3004]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[3137]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Google translate 3]]></title>
+				<directive><![CDATA[{"title":"Google translate 3","link":"# ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Takes you to the google translate service of matthias]]></description>
+				<startpagelink><![CDATA[https://translate.google.fr/]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Finder-Icons/infonet-headcoach-70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/infonet-headcoach-70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[mhandlos]]></contact>
+				<device />
+				<topics><![CDATA[Training]]></topics>
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[-3077]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test sum widget - mitte]]></title>
+				<directive><![CDATA[{"title":"Test sum widget - mitte","size":"8", "items":[ { "wid":"123454540", "fsid":"454", "title":"Finance WW", "type":"teaser-widget", "link":"/departments/finance/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppPictureSmall.jpg"} , { "wid":"123454591", "fsid":"459", "title":"Servus TV", "type":"teaser-widget", "link":"http://servus.tv", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servus_tv_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servus_tv_AppPictureSmall.jpg"} ]}]]></directive>
+				<description><![CDATA[test]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/picture-examples/canontable_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/picture-examples/canontable_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[-3076]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test sum widget - Anfang]]></title>
+				<directive><![CDATA[{"title":"Test sum widget - Anfang","size":"8", "items":[ { "wid":"123453860", "fsid":"386", "title":"IT Information Corner", "type":"teaser-widget", "link":"/departments/information-technology/App-Information-Corner/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppPictureSmall.jpg"} , { "wid":"123454541", "fsid":"454", "title":"Finance WW", "type":"teaser-widget", "link":"/departments/finance/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppPictureSmall.jpg"} ]}]]></directive>
+				<description><![CDATA[test]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/picture-examples/canontable_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/picture-examples/canontable_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[-3074]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test sum widget - ende]]></title>
+				<directive><![CDATA[{"title":"Test sum widget - ende","size":"8", "items":[ { "wid":"123453860", "fsid":"386", "title":"IT Information Corner", "type":"teaser-widget", "link":"/departments/information-technology/App-Information-Corner/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppPictureSmall.jpg"} , { "wid":"123454541", "fsid":"454", "title":"Finance WW", "type":"teaser-widget", "link":"/departments/finance/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppPictureSmall.jpg"} ]}]]></directive>
+				<description><![CDATA[test]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/picture-examples/red_bull_energy_drinks_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/picture-examples/canontable_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/picture-examples/canontable_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:44 +0200 2013]]></created>
+				<fsid><![CDATA[-3017]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test Summary (InfoNet Apps)]]></title>
+				<directive><![CDATA[{"title":"Test Summary (InfoNet Apps)","size":"8", "items":[ { "wid":"1234520480", "fsid":"2048", "title":"Brand Marketing", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdbrand/BrandMarketingModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_brand_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_brand_300x300_AppPictureSmall.png"} , { "wid":"1234523121", "fsid":"2312", "title":"Headcoach", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/headcoach/QBModule/ShowQBReportList", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png"} , { "wid":"1234523102", "fsid":"2310", "title":"Event Calendar", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/calendar/EventCalendarModule2/HotspotEventCalendar", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureSmall.png"} , { "wid":"1234523093", "fsid":"2309", "title":"Teamrooms", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/teamrooms/TeamRooms/TeamroomsOverview", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureSmall.png"} , { "wid":"1234523084", "fsid":"2308", "title":"Domain & Email Service", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/domainservice/DomainManagement/ShowDomainSearch", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureSmall.png"} , { "wid":"1234523075", "fsid":"2307", "title":"Library", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/library/Library/ShowInfoNetLibrary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-sports-300x300_AppTeaserImage-2.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-sports-300x300_AppPictureSmall-2.png"} , { "wid":"1234523066", "fsid":"2306", "title":"Glossary", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/glossary/Glossary/ShowGlossary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"1234523057", "fsid":"2305", "title":"News", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png"} , { "wid":"1234523048", "fsid":"2304", "title":"Red Bull Culture", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/culture/CultureModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-culture-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-culture-300x300_AppPictureSmall.png"} , { "wid":"12345218111", "fsid":"2181", "title":"Athletes - Events - Motorsports", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/sports/AthleteModule/ShowSportStartPage&test=1", "img":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppPictureSmall.jpg"} , { "wid":"12345217612", "fsid":"2176", "title":"Coverage Database", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/CoverageDB/Coverage/ShowLandingPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-coverage-database-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-coverage-database-300x300_AppPictureSmall.png"} , { "wid":"12345205113", "fsid":"2051", "title":"Contacts", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/contacts/Organization/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"12345205014", "fsid":"2050", "title":"Consumer Collecting", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdcollecting/ConsumerCollectingModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppPictureSmall.png"} , { "wid":"12345204915", "fsid":"2049", "title":"Communication / RMBH", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/rbmh/CommunicationsModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppPictureSmall.png"} ]}]]></directive>
+				<description><![CDATA[Test Summary (InfoNet Apps)]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/infonet-communication-and-mediahouse-70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/infonet-communication-and-mediahouse-70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[2]]></instances>
+				<version><![CDATA[1]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Ibrahim Isik]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>10000</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[-3016]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test My Shortcuts 2.0]]></title>
+				<directive><![CDATA[{"title":"Test My Shortcuts 2.0","size":"8", "items":[ { "wid":"1234520510", "fsid":"2051", "title":"Contacts", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/contacts/Organization/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"1234523101", "fsid":"2310", "title":"Event Calendar", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/calendar/EventCalendarModule2/HotspotEventCalendar", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureSmall.png"} , { "wid":"1234529472", "fsid":"2947", "title":"Marketing Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpMarketingSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529463", "fsid":"2946", "title":"Sales Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSalesSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529454", "fsid":"2945", "title":"Hyperion Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpHYPSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234523065", "fsid":"2306", "title":"Glossary", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/glossary/Glossary/ShowGlossary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"1234523056", "fsid":"2305", "title":"News", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png"} , { "wid":"1234526277", "fsid":"2627", "title":"Workbench Help & Support", "type":"teaser-widget", "link":"/departments/information-technology/workbench-help-support/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppTeaserImage.jpg", "removable":"false", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppPictureSmall.jpg"} , { "wid":"1234523128", "fsid":"2312", "title":"Headcoach", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/headcoach/QBModule/ShowQBReportList", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png"} , { "wid":"1234523099", "fsid":"2309", "title":"Teamrooms", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/teamrooms/TeamRooms/TeamroomsOverview", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureSmall.png"} , { "wid":"12345230810", "fsid":"2308", "title":"Domain & Email Service", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/domainservice/DomainManagement/ShowDomainSearch", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureSmall.png"} ]}]]></directive>
+				<description><![CDATA[Test My Shortcuts 2.0]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/picture-examples/Red-Bull-Stratos-next-gen-space-suit-and-pressure-helmet1_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/picture-examples/Red-Bull-Stratos-next-gen-space-suit-and-pressure-helmet1_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[2]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[-3015]]></fsid>
+				<type><![CDATA[summarizing-widget]]></type>
+				<title><![CDATA[Test My Shortcuts]]></title>
+				<directive><![CDATA[{"title":"Test My Shortcuts","size":"8", "items":[ { "wid":"1234529440", "fsid":"2944", "title":"SAP Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSAPSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"123455791", "fsid":"579", "title":"Service Desk", "type":"teaser-widget", "link":"redbull.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servicedesk_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servicedesk_AppPictureSmall.jpg"} , { "wid":"1234520512", "fsid":"2051", "title":"Contacts", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/contacts/Organization/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"1234523103", "fsid":"2310", "title":"Event Calendar", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/calendar/EventCalendarModule2/HotspotEventCalendar", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureSmall.png"} , { "wid":"1234529494", "fsid":"2949", "title":"IT Support (AMR)", "type":"teaser-widget", "link":"https://rbamit.service-now.com/", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529485", "fsid":"2948", "title":"IT Support (EUR)", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpITSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529476", "fsid":"2947", "title":"Marketing Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpMarketingSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529467", "fsid":"2946", "title":"Sales Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSalesSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234529458", "fsid":"2945", "title":"Hyperion Support", "type":"teaser-widget", "link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpHYPSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"} , { "wid":"1234523069", "fsid":"2306", "title":"Glossary", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/glossary/Glossary/ShowGlossary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"} , { "wid":"12345230510", "fsid":"2305", "title":"News", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png"} , { "wid":"12345262711", "fsid":"2627", "title":"Workbench Help & Support", "type":"teaser-widget", "link":"/departments/information-technology/workbench-help-support/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppTeaserImage.jpg", "removable":"false", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppPictureSmall.jpg"} , { "wid":"12345231212", "fsid":"2312", "title":"Headcoach", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/headcoach/QBModule/ShowQBReportList", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png"} , { "wid":"12345230913", "fsid":"2309", "title":"Teamrooms", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/teamrooms/TeamRooms/TeamroomsOverview", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureSmall.png"} , { "wid":"12345230814", "fsid":"2308", "title":"Domain & Email Service", "type":"teaser-widget", "link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/domainservice/DomainManagement/ShowDomainSearch", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureSmall.png"} ]}]]></directive>
+				<description><![CDATA[Test My Shortcuts]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[2]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2949]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[IT Support (AMR)]]></title>
+				<directive><![CDATA[{"title":"IT Support (AMR)","link":"https://rbamit.service-now.com/", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for IT Support (AMR)]]></description>
+				<startpagelink><![CDATA[https://rbamit.service-now.com/]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2948]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[IT Support (EUR)]]></title>
+				<directive><![CDATA[{"title":"IT Support (EUR)","link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpITSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for IT Support Europe.]]></description>
+				<startpagelink><![CDATA[https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpITSupportRequest.xsp?OpenXPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2947]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Marketing Support]]></title>
+				<directive><![CDATA[{"title":"Marketing Support","link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpMarketingSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for Marketing Support.]]></description>
+				<startpagelink><![CDATA[https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpMarketingSupportRequest.xsp?OpenXPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2946]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Sales Support]]></title>
+				<directive><![CDATA[{"title":"Sales Support","link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSalesSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for Sales Support.]]></description>
+				<startpagelink><![CDATA[https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSalesSupportRequest.xsp?OpenXPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Sales]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2945]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Hyperion Support]]></title>
+				<directive><![CDATA[{"title":"Hyperion Support","link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpHYPSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for Hyperion related support.]]></description>
+				<startpagelink><![CDATA[https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpHYPSupportRequest.xsp?OpenXPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.1]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Finance]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2944]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[SAP Support]]></title>
+				<directive><![CDATA[{"title":"SAP Support","link":"https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSAPSupportRequest.xsp?OpenXPage", "img":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/app_support_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Raise a ticket for SAP related support.]]></description>
+				<startpagelink><![CDATA[https://stage-eu.wiiings.com/rbeurapp01-q/international/webforms.nsf/xpSAPSupportRequest.xsp?OpenXPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/app_support_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/app_support_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Thomas Trausner]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2760]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Brand Marketing New]]></title>
+				<directive><![CDATA[{"title":"Brand Marketing New","link":"/departments/marketing/brand-marketing/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Marketing_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Marketing_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[New Brand Marketing workbench section]]></description>
+				<startpagelink><![CDATA[/departments/marketing/brand-marketing/brand-marketing-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/Marketing_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/Marketing_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Shakur Shidane]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2758]]></fsid>
+				<type><![CDATA[clock-widget]]></type>
+				<title><![CDATA[app name]]></title>
+				<directive><![CDATA[{"title":"app name","items":"[]", "removable":"true", "editable":"true", "link":"# ", "img":"https://tibbr.redbull.com/q/technical/technical_images/App-Integration/world-clock_AppTeaserImage.png"}]]></directive>
+				<description />
+				<startpagelink />
+				<image><![CDATA[/media/Departments/Information-Technology/APP-Information-Corner/Examples/Test-Picture_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Departments/Information-Technology/APP-Information-Corner/Examples/Test-Picture_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2756]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Help and Training App 2]]></title>
+				<directive><![CDATA[{"title":"Help and Training App 2","link":"/departments/training/App-Training-Group-2/Menu-2/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_hr_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_hr_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Help and Training App 2]]></description>
+				<startpagelink><![CDATA[/departments/training/App-Training-Group-2/App-Startpage-for-training-group-2-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_hr_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_hr_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages><![CDATA[en]]></languages>
+				<browsers />
+				<os />
+				<contact />
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2754]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Training App 1]]></title>
+				<directive><![CDATA[{"title":"Training App 1","link":"/departments/training/App-Training-Group-1/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/Header-icons/contentpage_header_img_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/Header-icons/contentpage_header_img_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Training App 1]]></description>
+				<startpagelink><![CDATA[/departments/training/training-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/Header-icons/contentpage_header_img_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/Header-icons/contentpage_header_img_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Ibrahim Isik]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Training]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2752]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Unified UX]]></title>
+				<directive><![CDATA[{"title":"Unified UX","link":"/departments/information-technology/Unified-UX/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/Header-icons/contentpage_header_img_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/Header-icons/contentpage_header_img_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Unified UX Style Guide]]></description>
+				<startpagelink><![CDATA[/departments/information-technology/Unified-UX/AppStartpage-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/Header-icons/contentpage_header_img_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/Header-icons/contentpage_header_img_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Ibrahim Isik]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2689]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Test app 4.0]]></title>
+				<directive><![CDATA[{"title":"Test app 4.0","link":"google.de", "img":"https://tibbr.redbull.com/q/media/Departments/Information-Technology/APP-Information-Corner/Examples/jellyfish_1_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Departments/Information-Technology/APP-Information-Corner/Examples/jellyfish_1_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[eaasdfaf]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Departments/Information-Technology/APP-Information-Corner/Examples/jellyfish_1_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Departments/Information-Technology/APP-Information-Corner/Examples/jellyfish_1_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser><![CDATA[/media/picture-examples/image_AppTeaserImage.jpg]]></imageTeaser>
+				<imageDepartment><![CDATA[/media/picture-examples/image_appModuleIcon.jpg]]></imageDepartment>
+				<hideapp><![CDATA[1]]></hideapp>
+				<instances><![CDATA[10]]></instances>
+				<version />
+				<languages><![CDATA[es]]></languages>
+				<browsers><![CDATA[Chrome=17;Chrome=17]]></browsers>
+				<os />
+				<contact><![CDATA[hpfahl]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Information Technology;Finance]]></departments>
+				<geographical><![CDATA[North America]]></geographical>
+				<permissions><![CDATA[SVCG3959,SVCG3563,SVCG6012]]></permissions>
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>1</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>7</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2627]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Workbench Help & Support]]></title>
+				<directive><![CDATA[{"title":"Workbench Help & Support","link":"/departments/information-technology/workbench-help-support/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppTeaserImage.jpg", "removable":"false", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Here you will find information for how to use the Workbench....]]></description>
+				<startpagelink><![CDATA[/departments/information-technology/workbench-help-support/home-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_domain_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_domain_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Ibrahim Isik]]></contact>
+				<device />
+				<topics><![CDATA[Support]]></topics>
+				<departments><![CDATA[Information Technology;Miscellaneous;Sales;Marketing;Finance;Human Resources;Operations;Legal;Support]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2312]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Headcoach]]></title>
+				<directive><![CDATA[{"title":"Headcoach","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/headcoach/QBModule/ShowQBReportList", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Headcoach]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/headcoach/QBModule/ShowQBReportList]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-headcoach-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>1</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>2</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2310]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Event Calendar]]></title>
+				<directive><![CDATA[{"title":"Event Calendar","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/calendar/EventCalendarModule2/HotspotEventCalendar", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Event Calendar]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/calendar/EventCalendarModule2/HotspotEventCalendar]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-event-calendar-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing;Department_QS]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2309]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Teamrooms]]></title>
+				<directive><![CDATA[{"title":"Teamrooms","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/teamrooms/TeamRooms/TeamroomsOverview", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Teamrooms]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/teamrooms/TeamRooms/TeamroomsOverview]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-teamrooms-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2308]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Domain & Email Service]]></title>
+				<directive><![CDATA[{"title":"Domain & Email Service","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/domainservice/DomainManagement/ShowDomainSearch", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Domain & Email Service]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/domainservice/DomainManagement/ShowDomainSearch]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-domain-and-email-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2307]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Library]]></title>
+				<directive><![CDATA[{"title":"Library","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/library/Library/ShowInfoNetLibrary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-sports-300x300_AppTeaserImage-2.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-sports-300x300_AppPictureSmall-2.png"}]]></directive>
+				<description><![CDATA[Library]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/library/Library/ShowInfoNetLibrary]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-sports-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-sports-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.1]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2306]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Glossary]]></title>
+				<directive><![CDATA[{"title":"Glossary","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/glossary/Glossary/ShowGlossary", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Glossary]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/glossary/Glossary/ShowGlossary]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-contacts-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2305]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[News]]></title>
+				<directive><![CDATA[{"title":"News","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[News]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/news/News2/ShowGlobalNews2]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-news-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-news-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2304]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Red Bull Culture]]></title>
+				<directive><![CDATA[{"title":"Red Bull Culture","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/culture/CultureModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-culture-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-culture-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Red Bull Culture]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/culture/CultureModule/ShowStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-culture-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-culture-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2240]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Enterprise Search]]></title>
+				<directive><![CDATA[{"title":"Enterprise Search","link":"https://search-eu-q.redbull.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_enterprise_search_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_enterprise_search_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Link to Enterprise Search Application]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/icon_enterprise_search_70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/icon_enterprise_search_70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>2</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2181]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Athletes - Events - Motorsports]]></title>
+				<directive><![CDATA[{"title":"Athletes - Events - Motorsports","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/sports/AthleteModule/ShowSportStartPage&test=1", "img":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_sports_300x300_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Former Sports section from InfoNet.]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/sports/AthleteModule/ShowSportStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/icon_sports_300x300_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/icon_sports_300x300_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>1</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2180]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[File Sharing]]></title>
+				<directive><![CDATA[{"title":"File Sharing","link":"https://sts-q.fed.redbull.com/adfs/ls/?whr=https://extauth-q.redbull.com/FIM/sps/adfssaml20idp/saml20&wa=wsignin1.0&wtrealm=urn:federation:MicrosoftOnline&wctx=wa%3Dwsignin1.0%26rpsnv%3D2%26ct%3D1369168963%26rver%3D6.1.6206.0%26wp%3DMCMBI%26wreply%3Dhttps://redbullqa.sharepoint.com/%26lc%3D1033%26id%3D500046%26%26", "img":"https://tibbr.redbull.com/q/media/Apps/icon_fileshare_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/icon_fileshare_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Access the new File Sharing solution of Red Bull.]]></description>
+				<startpagelink><![CDATA[https://redbullqa.sharepoint.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/icon_fileshare_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/icon_fileshare_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Jürgen Bader]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>3</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2179]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[AtTask]]></title>
+				<directive><![CDATA[{"title":"AtTask","link":"https://redbull.attask-ondemand.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/attask-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/attask-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[AtTask - Project Management Tool]]></description>
+				<startpagelink><![CDATA[https://redbull.attask-ondemand.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/attask-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/attask-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Mathias Elsässer]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>8</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2178]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Social Collaboration]]></title>
+				<directive><![CDATA[{"title":"Social Collaboration","link":"Social Collaboration", "img":"https://tibbr.redbull.com/q/technical/technical_images/img/preview/collaboration_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/technical/technical_images/img/preview/collaboration_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Social Collaboration]]></description>
+				<startpagelink><![CDATA[https://collaboration-q.redbull.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Finder-Icons/collaboration_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/collaboration_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Kai Kagerer]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Department_QS]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>2</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2176]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Coverage Database]]></title>
+				<directive><![CDATA[{"title":"Coverage Database","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/CoverageDB/Coverage/ShowLandingPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-coverage-database-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-coverage-database-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Coverage Database]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/CoverageDB/Coverage/ShowLandingPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Finder-Icons/infonet-coverage-database-70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/infonet-coverage-database-70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[100]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages><![CDATA[en]]></languages>
+				<browsers><![CDATA[FireFox=20;IE=8;Chrome=17;IE=10]]></browsers>
+				<os><![CDATA[windows=7]]></os>
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2051]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Contacts]]></title>
+				<directive><![CDATA[{"title":"Contacts","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/contacts/Organization/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-contacts-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Contacts]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/contacts/Organization/ShowStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Finder-Icons/infonet-contacts-70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/infonet-contacts-70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2050]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Consumer Collecting]]></title>
+				<directive><![CDATA[{"title":"Consumer Collecting","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdcollecting/ConsumerCollectingModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Consumer Collecting]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdcollecting/ConsumerCollectingModule/ShowStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/infonet-consumer-collecting-300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2049]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Communication / RMBH]]></title>
+				<directive><![CDATA[{"title":"Communication / RMBH","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/rbmh/CommunicationsModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/infonet-communication-and-mediahouse-300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Communication / RMBH]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/rbmh/CommunicationsModule/ShowStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Finder-Icons/infonet-communication-and-mediahouse-70x70_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/infonet-communication-and-mediahouse-70x70_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[2048]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Brand Marketing]]></title>
+				<directive><![CDATA[{"title":"Brand Marketing","link":"https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdbrand/BrandMarketingModule/ShowStartPage", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_brand_300x300_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/icon_brand_300x300_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Brand Marketing]]></description>
+				<startpagelink><![CDATA[https://stage.wiiings.com/infonet/Infonet/Security/ExternalLogin?target=infonet&deeplinkURI=/InfApps/cdbrand/BrandMarketingModule/ShowStartPage]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/icon_brand_300x300_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/icon_brand_300x300_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages><![CDATA[en]]></languages>
+				<browsers><![CDATA[FireFox=20;IE=8;Chrome=17;IE=10]]></browsers>
+				<os><![CDATA[windows=7]]></os>
+				<contact><![CDATA[Stefan Kleineisen]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1989]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Social Collaboration Integration]]></title>
+				<directive><![CDATA[{"title":"Social Collaboration Integration","link":"https://collaboration-q.redbull.com/community/test-space/test-subspace-02", "img":"https://tibbr.redbull.com/q/media/Apps/App-Finder-Icons/collaboration_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Finder-Icons/collaboration_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Social Collaboration Integration]]></description>
+				<startpagelink />
+				<image><![CDATA[/technical/technical_images/img/preview/collaboration_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/technical/technical_images/img/preview/collaboration_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[10]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Company News]]></topics>
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1987]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Google Translate]]></title>
+				<directive><![CDATA[{"title":"Google Translate","link":"http://translate.google.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/sports_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/sports_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Google Translate service]]></description>
+				<startpagelink><![CDATA[http://translate.google.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/sports_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/sports_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[2]]></instances>
+				<version />
+				<languages><![CDATA[en]]></languages>
+				<browsers />
+				<os />
+				<contact><![CDATA[iisik]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1536]]></fsid>
+				<type><![CDATA[jive-widget]]></type>
+				<title><![CDATA[Collaboration]]></title>
+				<directive><![CDATA[{"title":"Collaboration","size":"8", "removable":"true", "editable":"true", "getUserData":"true", "group":"null", "dataCount":"5", "showActivityHours":"48", "jivePath":"/jiveeasyapi"}]]></directive>
+				<description><![CDATA[Collaboration]]></description>
+				<startpagelink />
+				<image><![CDATA[/technical/technical_images/img/preview/collaboration_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/technical/technical_images/img/preview/collaboration_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Kai Kagerer]]></contact>
+				<device />
+				<topics><![CDATA[Company News]]></topics>
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1408]]></fsid>
+				<type><![CDATA[bookmark-widget]]></type>
+				<title><![CDATA[My Bookmarks]]></title>
+				<directive><![CDATA[{"title":"My Bookmarks","orderBy":"date", "removable":"true", "editable":"true", "items":"[{"title":"Red Bull", "url":"http://www.redbull.com", "favicon":"https://getfavicon.appspot.com/http://www.redbull.com"}]"}]]></directive>
+				<description><![CDATA[Organize your bookmarks.]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/bookmarks_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/bookmarks_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[hpfahl]]></contact>
+				<device><![CDATA[desktop;tablet;mobile]]></device>
+				<topics />
+				<departments />
+				<geographical />
+				<permissions />
+				<mandatory />
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1026]]></fsid>
+				<type><![CDATA[time-management-widget]]></type>
+				<title><![CDATA[Timemanagement App]]></title>
+				<directive><![CDATA[{"title":"Timemanagement App","link":"https://stage-redportq.redbull.com/irj/portal/interop/com~rb~hr~timemgmtemployee", "removable":"true", "img":"@"}]]></directive>
+				<description><![CDATA[Manage time easily]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/time-management_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/time-management_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[1024]]></fsid>
+				<type><![CDATA[clock-widget]]></type>
+				<title><![CDATA[Clock App]]></title>
+				<directive><![CDATA[{"title":"Clock App","items":"["Australia/Sydney","Europe/Fuschl_am_See"]", "removable":"true", "editable":"true", "link":"http://www.timeanddate.com/worldclock/", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_domain_AppTeaserImage.jpg"}]]></directive>
+				<description />
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/world-time-clock_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/world-time-clock_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[2.3.1]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[hpfahl]]></contact>
+				<device><![CDATA[desktop;mobile]]></device>
+				<topics />
+				<departments><![CDATA[Finance]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[971]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[IT Crowd]]></title>
+				<directive><![CDATA[{"title":"IT Crowd","link":"# ", "img":"@", "removable":"true", "icon":"@"}]]></directive>
+				<description><![CDATA[Famous IT Comedy]]></description>
+				<startpagelink><![CDATA[http://www.channel4.com/programmes/the-it-crowd]]></startpagelink>
+				<image><![CDATA[/media/picture-examples/the_it_crowd_wallpaper_1680x1050_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/picture-examples/the_it_crowd_wallpaper_1680x1050_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[834]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[RB Content Pool]]></title>
+				<directive><![CDATA[{"title":"RB Content Pool","link":"https://www.redbullcontentpool.com/", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/red-bull-content-pool_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/red-bull-content-pool_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[Discover a World of Sports, Culture & Lifestyle]]></description>
+				<startpagelink><![CDATA[https://www.redbullcontentpool.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/red-bull-content-pool_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/red-bull-content-pool_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:45 +0200 2013]]></created>
+				<fsid><![CDATA[712]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[ESPN]]></title>
+				<directive><![CDATA[{"title":"ESPN","link":"# ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/espn_logo_AppTeaserImage.png", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/espn_logo_AppPictureSmall.png"}]]></directive>
+				<description><![CDATA[ESPN is a global cable television network focusing on sports-related programming]]></description>
+				<startpagelink><![CDATA[http://espn.go.com/]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/espn_logo_AppPictureSmall.png]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/espn_logo_AppPictureHeader.png]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[580]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[BI Reporting & Plan]]></title>
+				<directive><![CDATA[{"title":"BI Reporting & Plan","link":"http://goo.gl/UbV1P", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_bi_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_bi_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[BI Reporting & Plan]]></description>
+				<startpagelink><![CDATA[http://goo.gl/UbV1P]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_bi_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_bi_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact><![CDATA[Oliver Isenberg]]></contact>
+				<device />
+				<topics />
+				<departments><![CDATA[Finance;Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[579]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Service Desk]]></title>
+				<directive><![CDATA[{"title":"Service Desk","link":"redbull.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servicedesk_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servicedesk_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Description for Service Desk]]></description>
+				<startpagelink><![CDATA[https://extauth-d.redbull.com/FIM/sps/servicenowsaml20idp/saml20/logininitial?RequestBinding=HTTPPost&PartnerId=https%3A%2F%2Frbitd.service-now.com&NameIdFormat=Email&AllowCreate=false]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_servicedesk_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_servicedesk_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[578]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Line Reporting Tool]]></title>
+				<directive><![CDATA[{"title":"Line Reporting Tool","link":"google.de", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_line_reporting_tool_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_line_reporting_tool_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Description for Line Reporting Tool]]></description>
+				<startpagelink><![CDATA[https://linereporting-d.app.redbull.com]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_line_reporting_tool_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_line_reporting_tool_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[1]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>1</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[577]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[iManage]]></title>
+				<directive><![CDATA[{"title":"iManage","link":"redbull.com", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_iManage_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_iManage_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Description for iManage]]></description>
+				<startpagelink><![CDATA[https://int-eu.wiiings.com/ithq_imanage/iManage/modules/login/index.php]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_iManage_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_iManage_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[1]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>10</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[459]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Servus TV]]></title>
+				<directive><![CDATA[{"title":"Servus TV","link":"http://servus.tv", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servus_tv_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_servus_tv_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Your local TV Station]]></description>
+				<startpagelink><![CDATA[http://www.servustv.com/]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_servus_tv_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_servus_tv_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Miscellaneous]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[454]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[Finance WW]]></title>
+				<directive><![CDATA[{"title":"Finance WW","link":"/departments/finance/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/Finance_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[Finance Dept. App]]></description>
+				<startpagelink><![CDATA[/departments/finance/finance-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/Finance_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/Finance_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Finance]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>1</isDefault>
+				<ranking>9</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[386]]></fsid>
+				<type><![CDATA[teaser-widget]]></type>
+				<title><![CDATA[IT Information Corner]]></title>
+				<directive><![CDATA[{"title":"IT Information Corner","link":"/departments/information-technology/App-Information-Corner/index.jsp ", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppTeaserImage.jpg", "removable":"true", "icon":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppPictureSmall.jpg"}]]></directive>
+				<description><![CDATA[IT Information Corner]]></description>
+				<startpagelink><![CDATA[/departments/information-technology/App-Information-Corner/Information-Corner-Startpage-2.xml]]></startpagelink>
+				<image><![CDATA[/media/Apps/App-Images/_old/app_bg_world_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Images/_old/app_bg_world_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link;title;icon]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[385]]></fsid>
+				<type><![CDATA[feed-widget]]></type>
+				<title><![CDATA[Red Bull News]]></title>
+				<directive><![CDATA[{"title":"Red Bull News","size":"4", "mode":"list", "hideControls":"false", "removable":"true", "editable":"true", "link":"/departments/information-technology/index.jsp ", "feedSource":"http://www.redbull.de/cs/Satellite?assetTypes=RB_Video%2CRB_Gallery%2CRB_Article%2CRB_AudioCollection&c=SiteEntry&cid=1243025654264&locale=1237398958892&maxRows=20&p=1242746061488&pageCount=1&pagename=RedBull%2FFeed%2FFeedSubscription&searchPageName=HomePage&searchPageType=ALL&searchSortBy=DATE&searchString=HomePage&searchType=All&site=RedBullDE&sortOrder=Desc", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_news_AppTeaserImage.jpg"}]]></directive>
+				<description><![CDATA[This App shows the latest Marketing News in an Overview.]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/feed_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/feed_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version><![CDATA[1.0]]></version>
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Marketing]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+			<app>
+				<created><![CDATA[Mon Jul 15 14:13:46 +0200 2013]]></created>
+				<fsid><![CDATA[64]]></fsid>
+				<type><![CDATA[feed-widget]]></type>
+				<title><![CDATA[IT News]]></title>
+				<directive><![CDATA[{"title":"IT News","size":"4", "mode":"list", "hideControls":"false", "removable":"true", "editable":"true", "link":"google.de", "feedSource":"https://workbench-q.redbull.com/technical/xml/XML-RSS-IT.xml", "img":"https://tibbr.redbull.com/q/media/Apps/App-Images/_old/app_bg_world_AppTeaserImage.jpg"}]]></directive>
+				<description><![CDATA[This App shows the latest IT News in an Overview.]]></description>
+				<startpagelink />
+				<image><![CDATA[/media/Apps/App-Finder-Icons/feed_AppPictureSmall.jpg]]></image>
+				<imageHeader><![CDATA[/media/Apps/App-Finder-Icons/feed_AppPictureHeader.jpg]]></imageHeader>
+				<imageTeaser />
+				<imageDepartment />
+				<hideapp><![CDATA[0]]></hideapp>
+				<instances><![CDATA[0]]></instances>
+				<version />
+				<languages />
+				<browsers />
+				<os />
+				<contact />
+				<device />
+				<topics />
+				<departments><![CDATA[Information Technology]]></departments>
+				<geographical />
+				<permissions />
+				<mandatory><![CDATA[img;link]]></mandatory>
+				<isFeatured>0</isFeatured>
+				<isDefault>0</isDefault>
+				<ranking>0</ranking>
+			</app>
+		</red-bull-Apps>
+	</uxb_content>
+</uxb_entity>
