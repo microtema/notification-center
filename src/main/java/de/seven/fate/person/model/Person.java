@@ -5,6 +5,7 @@ import de.seven.fate.message.model.Message;
 import de.seven.fate.util.CollectionUtil;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.List;
 import java.util.Objects;
 
@@ -22,7 +23,8 @@ public class Person implements IdAble<Long>{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name;
+    @NotNull
+    private String ldapId;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "person", fetch = FetchType.LAZY)
     private List<Message> messages;
@@ -35,12 +37,12 @@ public class Person implements IdAble<Long>{
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getLdapId() {
+        return ldapId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setLdapId(String name) {
+        this.ldapId = name;
     }
 
     public List<Message> getMessages() {
@@ -56,20 +58,20 @@ public class Person implements IdAble<Long>{
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
-        return Objects.equals(name, person.name) &&
+        return Objects.equals(ldapId, person.ldapId) &&
                 CollectionUtil.equals(messages, person.messages);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, CollectionUtil.hash(messages));
+        return Objects.hash(ldapId, CollectionUtil.hash(messages));
     }
 
     @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
-                ", name='" + name + '\'' +
+                ", name='" + ldapId + '\'' +
                 ", messages=" + messages +
                 '}';
     }

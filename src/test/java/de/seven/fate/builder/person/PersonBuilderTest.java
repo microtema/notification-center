@@ -20,7 +20,7 @@ public class PersonBuilderTest {
         Person min = sut.min();
 
         Assert.assertNotNull(min);
-        Assert.assertNotNull(min.getName());
+        Assert.assertNotNull(min.getLdapId());
         Assert.assertNull(min.getId());
         Assert.assertNull(min.getMessages());
     }
