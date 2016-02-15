@@ -2,6 +2,7 @@ package de.seven.fate.message.dao;
 
 import de.seven.fate.dao.GenericEntityDAO;
 import de.seven.fate.message.model.Message;
+import org.apache.commons.lang3.Validate;
 
 import javax.annotation.Resource;
 import javax.persistence.EntityManager;

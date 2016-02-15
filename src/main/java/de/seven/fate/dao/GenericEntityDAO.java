@@ -82,7 +82,7 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
         return saveOrUpdate(get(entity), entity);
     }
 
-    public E saveOrUpdate(E recent, E entity) {
+    protected E saveOrUpdate(E recent, E entity) {
         Validate.notNull(entity);
 
         if (recent == null) {

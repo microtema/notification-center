@@ -26,6 +26,7 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.person")
                 .addPackages(true, "de.seven.fate.dao")
                 .addPackages(true, "de.seven.fate.util")
+                .addPackages(true, "de.seven.fate.builder")
                 .addClasses(classes)
                 .addClasses(
                 )

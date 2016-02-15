@@ -5,6 +5,7 @@ import de.seven.fate.person.model.Person;
 import de.seven.fate.person.enums.MessageType;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 import java.util.Objects;
 
@@ -18,12 +19,15 @@ public class Message implements IdAble<Long> {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @NotNull
     private String description;
 
+    @NotNull
     private String image;
 
     private Date pubDate;
 
+    @NotNull
     @Enumerated(value = EnumType.STRING)
     private MessageType messageType;
 
@@ -86,13 +90,12 @@ public class Message implements IdAble<Long> {
         return Objects.equals(description, message.description) &&
                 Objects.equals(image, message.image) &&
                 Objects.equals(pubDate, message.pubDate) &&
-                messageType == message.messageType &&
-                Objects.equals(person.getId(), message.person.getId());
+                messageType == message.messageType ;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(description, image, pubDate, messageType, person.getId());
+        return Objects.hash(description, image, pubDate, messageType);
     }
 
     @Override
@@ -103,7 +106,6 @@ public class Message implements IdAble<Long> {
                 ", image='" + image + '\'' +
                 ", pubDate=" + pubDate +
                 ", messageType=" + messageType +
-                ", person=" + person.getId() +
                 '}';
     }
 }

@@ -1,6 +1,8 @@
 package de.seven.fate.person.model;
 
+import de.seven.fate.dao.IdAble;
 import de.seven.fate.message.model.Message;
+import de.seven.fate.util.CollectionUtil;
 
 import javax.persistence.*;
 import java.util.List;
@@ -10,7 +12,7 @@ import java.util.Objects;
  * Created by Mario on 14.02.2016.
  */
 @Entity
-public class Person {
+public class Person implements IdAble<Long>{
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,7 +20,7 @@ public class Person {
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "person")
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "person", fetch = FetchType.LAZY)
     private List<Message> messages;
 
     public Long getId() {
@@ -51,12 +53,12 @@ public class Person {
         if (o == null || getClass() != o.getClass()) return false;
         Person person = (Person) o;
         return Objects.equals(name, person.name) &&
-                Objects.equals(messages, person.messages);
+                CollectionUtil.equals(messages, person.messages);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, messages);
+        return Objects.hash(name, CollectionUtil.hash(messages));
     }
 
     @Override

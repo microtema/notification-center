@@ -1,13 +1,19 @@
-package it.de.seven.fate.message.dao;
+package it.de.seven.fate.person.dao;
 
 import de.seven.fate.builder.message.MessageBuilder;
 import de.seven.fate.builder.person.PersonBuilder;
 import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
+import de.seven.fate.person.dao.PersonDAO;
 import de.seven.fate.person.model.Person;
+import de.seven.fate.util.CollectionUtil;
+import it.de.seven.fate.message.dao.ArchiveDeployment;
 import junit.framework.Assert;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.asset.EmptyAsset;
+import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.After;
 import org.junit.Before;
@@ -19,20 +25,28 @@ import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
 
+import java.util.Iterator;
+import java.util.List;
+
+import static org.junit.Assert.*;
+
 /**
  * Created by Mario on 14.02.2016.
  */
 @RunWith(Arquillian.class)
-public class MessageDAOIT {
+public class PersonDAOIT {
 
     @Inject
-    MessageDAO sut;
+    PersonDAO sut;
 
     @Inject
-    MessageBuilder builder;
+    MessageDAO messageDAO;
 
     @Inject
-    PersonBuilder personBuilder;
+    PersonBuilder builder;
+
+    @Inject
+    MessageBuilder messageBuilder;
 
     @Inject
     UserTransaction utx;
@@ -40,8 +54,7 @@ public class MessageDAOIT {
     @PersistenceContext(unitName = "wcmsds")
     EntityManager em;
 
-    Person person;
-    Message model;
+    Person model;
 
     @Deployment
     public static WebArchive createDeployment() {
@@ -54,15 +67,8 @@ public class MessageDAOIT {
         utx.begin();
         em.joinTransaction();
 
-        person = personBuilder.min();
-        em.persist(person);
-
         model = builder.min();
-
-        //finally bind to person
-        model.setPerson(person);
-
-        sut.save(model);
+        em.persist(model);
 
         utx.commit();
     }
@@ -93,23 +99,65 @@ public class MessageDAOIT {
     }
 
     @Test
-    public void shouldGetByEntity() {
+    public void shouldGetByEntity() throws Exception {
+        utx.begin();
+        em.joinTransaction();
+
         Assert.assertEquals(model, sut.get(model));
+
+        utx.commit();
     }
 
     @Test
-    public void shouldUpdate() throws Exception{
+    public void shouldDelete() throws Exception {
 
         utx.begin();
         em.joinTransaction();
 
-        model.setDescription("some other description");
-        model.setPerson(em.find(Person.class,person.getId()));
+        List<Message> messages = CollectionUtil.trimToEmpty(model.getMessages());
+
+        sut.remove(model);
+
+        Assert.assertTrue( sut.list().isEmpty());
+
+        for(Message message : messages){
+            Assert.assertNull(messageDAO.get(message));
+        }
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldAddMessage() throws Exception {
+
+        utx.begin();
+        em.joinTransaction();
+
+        model = sut.get(model);
+
+        Message message = messageBuilder.min();
+
+        model.getMessages().add(message);
 
         sut.saveOrUpdate(model);
 
-        utx.commit();
+        Assert.assertEquals(model, sut.get(model));
 
-        Assert.assertEquals(model, sut.get(model.getId()));
+        utx.commit();
+    }
+
+    @Test
+    public void shouldSaveWithMessage() throws Exception {
+
+        utx.begin();
+        em.joinTransaction();
+
+        model = builder.max();
+
+        sut.save(model);
+
+        Assert.assertEquals(model, sut.get(model));
+
+        utx.commit();
     }
 }
