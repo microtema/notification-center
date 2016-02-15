@@ -129,6 +129,7 @@ public class PersonDAOIT {
         model = sut.get(model);
 
         Message message = messageBuilder.min();
+        message.setPerson(model);
 
         model.getMessages().add(message);
 

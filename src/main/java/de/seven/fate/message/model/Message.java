@@ -38,6 +38,7 @@ public class Message implements IdAble<Long> {
     @Enumerated(value = EnumType.STRING)
     private MessageType messageType;
 
+    @NotNull
     @ManyToOne(cascade = CascadeType.ALL)
     private Person person;
 
