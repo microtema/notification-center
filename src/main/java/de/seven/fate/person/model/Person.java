@@ -11,9 +11,13 @@ import java.util.Objects;
 /**
  * Created by Mario on 14.02.2016.
  */
+@NamedQueries({
+        @NamedQuery(name = Person.FIND_BY_MESSAGE, query = "SELECT p FROM Person p WHERE :message MEMBER OF p.messages")
+})
 @Entity
 public class Person implements IdAble<Long>{
 
+    public static final String FIND_BY_MESSAGE = "Person.findByMessage";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;

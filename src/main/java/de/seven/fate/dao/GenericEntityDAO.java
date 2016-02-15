@@ -1,5 +1,6 @@
 package de.seven.fate.dao;
 
+import de.seven.fate.message.model.Message;
 import de.seven.fate.util.ClassUtil;
 import de.seven.fate.util.CollectionUtil;
 import de.seven.fate.util.EntityUtil;
@@ -96,7 +97,7 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
             BeanUtils.copyProperties(recent, entity);
         } catch (Exception e) {
 
-            logger.warn("unable to update properties from: "+entity+" to "+recent);
+            logger.warn("unable to update properties from: " + entity + " to " + recent);
             throw new IllegalStateException(e);
         }
 
@@ -170,7 +171,7 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
     }
 
     protected void removeImpl(E entity) {
-        assert entity!=null;
+        assert entity != null;
 
         E e = get(entity);
 
@@ -205,6 +206,20 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
         criteria.select(builder.count(from));
 
         return em.createQuery(criteria).getSingleResult();
+    }
+
+    public Query createNamedQuery(String namedQuery, Object... params) {
+        Validate.notNull(namedQuery);
+
+        Query query = em.createNamedQuery(namedQuery);
+
+        Map<Object, Object> parameters = CollectionUtil.createMap(params);
+
+        for (Map.Entry<Object, Object> param : parameters.entrySet()) {
+            query.setParameter(String.valueOf(param.getKey()), param.getValue());
+        }
+
+        return query;
     }
 
     @PostConstruct

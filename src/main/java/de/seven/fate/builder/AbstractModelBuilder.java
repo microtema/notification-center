@@ -1,6 +1,7 @@
 package de.seven.fate.builder;
 
 import de.seven.fate.util.ClassUtil;
+import de.seven.fate.util.NumberUtil;
 import org.apache.commons.beanutils.BeanUtils;
 
 import java.lang.reflect.InvocationTargetException;
@@ -39,7 +40,7 @@ public abstract class AbstractModelBuilder<T> implements ModelBuilder<T> {
     }
 
     protected int randomInt(){
-        return new Random().nextInt(10);
+        return NumberUtil.random(1, 10);
     }
 
     protected boolean randomBoolean(){

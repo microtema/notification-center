@@ -7,9 +7,11 @@ import de.seven.fate.person.model.Person;
 
 import static de.seven.fate.util.CollectionUtil.*;
 
+import de.seven.fate.util.CollectionUtil;
 import org.apache.commons.lang3.Validate;
 
 import javax.inject.Inject;
+import javax.persistence.Query;
 import java.util.Iterator;
 import java.util.List;
 
@@ -56,4 +58,16 @@ public class PersonDAO extends GenericEntityDAO<Person, Long> {
 
         removeImpl(entity);
     }
+
+    public Person getByMessage(Message message) {
+        Validate.notNull(message, " message should not be null");
+
+        Query query = createNamedQuery(Person.FIND_BY_MESSAGE, "message", message);
+
+        query.setMaxResults(1);
+        List<Person> resultList = query.getResultList();
+
+        return CollectionUtil.first(resultList);
+    }
+
 }

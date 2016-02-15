@@ -160,4 +160,21 @@ public class PersonDAOIT {
 
         utx.commit();
     }
+
+    @Test
+    public void shouldGetByMessage() throws Exception {
+
+        utx.begin();
+        em.joinTransaction();
+
+        model = builder.max();
+
+        sut.save(model);
+
+        Message message = CollectionUtil.random(model.getMessages());
+
+        Assert.assertEquals(model, sut.getByMessage(message));
+
+        utx.commit();
+    }
 }
