@@ -12,9 +12,13 @@ import java.util.Objects;
 /**
  * Created by Mario on 14.02.2016.
  */
+@NamedQueries({
+        @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person")
+})
 @Entity
 public class Message implements IdAble<Long> {
 
+    public static final String FIND_BY_PERSON = "Message.findByPerson";
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -90,7 +94,7 @@ public class Message implements IdAble<Long> {
         return Objects.equals(description, message.description) &&
                 Objects.equals(image, message.image) &&
                 Objects.equals(pubDate, message.pubDate) &&
-                messageType == message.messageType ;
+                messageType == message.messageType;
     }
 
     @Override

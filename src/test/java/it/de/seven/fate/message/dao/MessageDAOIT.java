@@ -112,4 +112,12 @@ public class MessageDAOIT {
 
         Assert.assertEquals(model, sut.get(model.getId()));
     }
+
+    @Test
+    public void shouldGetByPerson() throws Exception{
+
+        Message entity = sut.findByPerson(model.getPerson());
+
+        Assert.assertEquals(model, entity);
+    }
 }
