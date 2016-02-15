@@ -1,9 +1,9 @@
 package it.de.seven.fate.person.dao;
 
-import de.seven.fate.builder.message.MessageBuilder;
-import de.seven.fate.builder.person.PersonBuilder;
+import de.seven.fate.message.builder.MessageBuilder;
 import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
+import de.seven.fate.person.builder.PersonBuilder;
 import de.seven.fate.person.dao.PersonDAO;
 import de.seven.fate.person.model.Person;
 import de.seven.fate.util.CollectionUtil;
@@ -11,9 +11,6 @@ import it.de.seven.fate.message.dao.ArchiveDeployment;
 import junit.framework.Assert;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
 import org.junit.After;
 import org.junit.Before;
@@ -24,11 +21,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
-
-import java.util.Iterator;
 import java.util.List;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Mario on 14.02.2016.

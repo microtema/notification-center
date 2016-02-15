@@ -1,6 +1,7 @@
 package de.seven.fate.builder.person;
 
-import de.seven.fate.builder.message.MessageBuilder;
+import de.seven.fate.message.builder.MessageBuilder;
+import de.seven.fate.person.builder.PersonBuilder;
 import de.seven.fate.person.model.Person;
 import junit.framework.Assert;
 import org.junit.Test;

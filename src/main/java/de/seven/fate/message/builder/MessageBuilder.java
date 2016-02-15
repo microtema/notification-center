@@ -1,9 +1,8 @@
-package de.seven.fate.builder.message;
+package de.seven.fate.message.builder;
 
 import de.seven.fate.builder.AbstractModelBuilder;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.person.enums.MessageType;
-import de.seven.fate.person.model.Person;
 import de.seven.fate.util.NumberUtil;
 
 /**
