@@ -6,11 +6,8 @@ import de.seven.fate.person.model.Person;
 import de.seven.fate.util.CollectionUtil;
 import org.apache.commons.lang3.Validate;
 
-import javax.annotation.Resource;
-import javax.persistence.EntityManager;
-import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
-import javax.ws.rs.core.GenericEntity;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -28,5 +25,19 @@ public class MessageDAO extends GenericEntityDAO<Message, Long> {
         List<Message> resultList = query.getResultList();
 
         return CollectionUtil.first(resultList);
+    }
+
+    public List<Message> findAllByPubDate(Date startPubDate, Date endPubDate) {
+        Validate.notNull(startPubDate);
+
+        if (endPubDate == null) {
+            endPubDate = new Date();
+        }
+
+        Query query = createNamedQuery(Message.FIND_BY_PUB_DATE, "startPubDate", startPubDate, "endPubDate", endPubDate);
+
+        query.setMaxResults(100);
+
+        return query.getResultList();
     }
 }

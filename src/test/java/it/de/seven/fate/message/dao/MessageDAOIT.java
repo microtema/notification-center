@@ -5,6 +5,7 @@ import de.seven.fate.builder.person.PersonBuilder;
 import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.person.model.Person;
+import de.seven.fate.util.CollectionUtil;
 import junit.framework.Assert;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -18,6 +19,8 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
+import java.util.Date;
+import java.util.List;
 
 /**
  * Created by Mario on 14.02.2016.
@@ -119,5 +122,13 @@ public class MessageDAOIT {
         Message entity = sut.findByPerson(model.getPerson());
 
         Assert.assertEquals(model, entity);
+    }
+
+    @Test
+    public void shouldGetByDate() throws Exception {
+
+        List<Message> entites = sut.findAllByPubDate(model.getPubDate(), new Date());
+
+        Assert.assertEquals(model, CollectionUtil.first(entites));
     }
 }

@@ -1,8 +1,8 @@
 package de.seven.fate.message.model;
 
 import de.seven.fate.dao.IdAble;
-import de.seven.fate.person.model.Person;
 import de.seven.fate.person.enums.MessageType;
+import de.seven.fate.person.model.Person;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -13,12 +13,15 @@ import java.util.Objects;
  * Created by Mario on 14.02.2016.
  */
 @NamedQueries({
-        @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person")
+        @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person"),
+        @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate")
 })
 @Entity
 public class Message implements IdAble<Long> {
 
     public static final String FIND_BY_PERSON = "Message.findByPerson";
+    public static final String FIND_BY_PUB_DATE = "Message.findAllByPubDate";
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
