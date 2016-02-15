@@ -171,4 +171,28 @@ public class PersonDAOIT {
 
         utx.commit();
     }
+
+    @Test
+    public void shouldGetByLdapId() throws Exception {
+
+        utx.begin();
+        em.joinTransaction();
+
+        Assert.assertEquals(model, sut.getByLdapId(model.getLdapId()));
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldGetByLdapIdOnNullId() throws Exception {
+
+        utx.begin();
+        em.joinTransaction();
+
+        model.setId(null);
+
+        Assert.assertEquals(model, sut.get(model));
+
+        utx.commit();
+    }
 }

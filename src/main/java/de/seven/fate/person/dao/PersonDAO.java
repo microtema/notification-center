@@ -1,35 +1,44 @@
 package de.seven.fate.person.dao;
 
 import de.seven.fate.dao.GenericEntityDAO;
-import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.person.model.Person;
-
-import static de.seven.fate.util.CollectionUtil.*;
-
 import de.seven.fate.util.CollectionUtil;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 
-import javax.inject.Inject;
 import javax.persistence.Query;
 import java.util.Iterator;
 import java.util.List;
+import java.util.NoSuchElementException;
+
+import static de.seven.fate.util.CollectionUtil.iterator;
+import static de.seven.fate.util.CollectionUtil.trimToEmpty;
 
 /**
  * Created by Mario on 14.02.2016.
  */
 public class PersonDAO extends GenericEntityDAO<Person, Long> {
 
+    @Override
+    public Person get(Person entity) {
+        Validate.notNull(entity);
 
-    private final MessageDAO messageDAO;
+        if (entity.getId() != null) {
+            return super.get(entity);
+        }
 
-    @Inject
-    public PersonDAO(MessageDAO messageDAO) {
-        this.messageDAO = messageDAO;
+        if (StringUtils.isNotEmpty(entity.getLdapId())) {
+            return getByLdapId(entity.getLdapId());
+        }
+
+        throw new NoSuchElementException("Unable to get person: " + entity);
     }
+
 
     @Override
     public void save(Person entity) {
+        Validate.notNull(entity, " entity should not be null");
 
         List<Message> messages = trimToEmpty(entity.getMessages());
 
@@ -52,7 +61,6 @@ public class PersonDAO extends GenericEntityDAO<Person, Long> {
 
             Message message = iterator.next();
             message.setPerson(null);
-            messageDAO.remove(message);
             iterator.remove();
         }
 
@@ -69,5 +77,17 @@ public class PersonDAO extends GenericEntityDAO<Person, Long> {
 
         return CollectionUtil.first(resultList);
     }
+
+    public Person getByLdapId(String ldapId) {
+        Validate.notNull(ldapId, " ldapId should not be null");
+
+        Query query = createNamedQuery(Person.FIND_BY_LDAPID, "ldapId", ldapId);
+
+        query.setMaxResults(1);
+        List<Person> resultList = query.getResultList();
+
+        return CollectionUtil.first(resultList);
+    }
+
 
 }

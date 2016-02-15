@@ -22,6 +22,7 @@ import javax.inject.Inject;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.transaction.UserTransaction;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -53,6 +54,8 @@ public class MessageServiceIT {
 
     List<Message> models;
 
+    Person person;
+
     @Deployment
     public static WebArchive createDeployment() {
         return ArchiveDeployment.createDeployment();
@@ -64,7 +67,7 @@ public class MessageServiceIT {
         utx.begin();
         em.joinTransaction();
 
-        Person person = personBuilder.max();
+        person = personBuilder.max();
 
         models = person.getMessages();
 
@@ -100,6 +103,56 @@ public class MessageServiceIT {
         sut.removeMessage(model);
 
         Assert.assertNull(sut.getMessage(model));
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldSave() throws Exception {
+        utx.begin();
+        em.joinTransaction();
+
+        Message model = builder.min();
+
+        model.setPerson(CollectionUtil.random(models).getPerson());
+
+        sut.saveMessage(model);
+
+        Assert.assertNotNull(sut.getMessage(model));
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldSaveAsList() throws Exception {
+        utx.begin();
+        em.joinTransaction();
+
+        Message model = builder.min();
+
+        model.setPerson(CollectionUtil.random(models).getPerson());
+
+        sut.saveMessage(Arrays.asList(model));
+
+        Assert.assertNotNull(sut.getMessage(model));
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldSaveToPerson() throws Exception {
+        utx.begin();
+        em.joinTransaction();
+
+        List<Message> models = builder.list();
+
+        sut.saveMessage(models, person);
+
+        for (Message model : models) {
+            Message message = sut.getMessage(model);
+            Assert.assertNotNull(message);
+            Assert.assertEquals(person.getId(), message.getPerson().getId());
+        }
 
         utx.commit();
     }
