@@ -1,6 +1,7 @@
 package de.seven.fate.message.model;
 
 import de.seven.fate.dao.IdAble;
+import de.seven.fate.message.listener.MessageListener;
 import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.person.model.Person;
 
@@ -17,6 +18,7 @@ import java.util.Objects;
         @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate")
 })
 @Entity
+@EntityListeners(value = MessageListener.class)
 public class Message implements IdAble<Long> {
 
     public static final String FIND_BY_PERSON = "Message.findByPerson";
