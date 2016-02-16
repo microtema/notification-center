@@ -7,6 +7,7 @@ import org.apache.camel.converter.jaxb.JaxbDataFormat;
 import org.apache.camel.impl.DefaultCamelContext;
 
 import javax.annotation.PostConstruct;
+import javax.annotation.Resource;
 import javax.ejb.Singleton;
 import javax.ejb.Startup;
 import javax.inject.Inject;
@@ -17,13 +18,17 @@ import javax.xml.bind.JAXBContext;
  */
 @Singleton
 @Startup
-public class XmlMessageRoute extends RouteBuilder {
+public class XmlMessageRouteBuilder extends RouteBuilder {
 
     private final JaxbDataFormat messagesData = new JaxbDataFormat();
     private final CamelContext camelContext = new DefaultCamelContext();
 
+    @Resource(lookup = "java:global/IMPORT_PATH")
+    private String uri;
+
     @Inject
     private XmlMessageProcessor messageProcessor;
+
 
     @PostConstruct
     private void init() throws Exception {
@@ -39,7 +44,7 @@ public class XmlMessageRoute extends RouteBuilder {
 
     @Override
     public void configure() {
-        from("file://C:/data/input").unmarshal(messagesData).process(messageProcessor);
+        from(uri).unmarshal(messagesData).process(messageProcessor);
     }
 
 }

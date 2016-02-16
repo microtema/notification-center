@@ -23,6 +23,7 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.builder")
                 .addPackages(true, "de.seven.fate.converter")
                 .addPackages(true, "de.seven.fate.xml")
+                .addPackages(true, "de.seven.fate.event")
                 .addClasses(classes)
                 .addClasses()
                 .addAsLibraries(resolver.artifact("org.apache.commons:commons-lang3").resolveAsFiles())
@@ -36,7 +37,7 @@ public class ArchiveDeployment {
                 .addAsWebInfResource("test-beans.xml")
                 .addAsWebInfResource("jbossas-ds.xml")
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
-                .addAsWebInfResource("WEB-INF/web.env-entry.xml", "web.xml");
+                .addAsWebInfResource("WEB-INF/web.xml", "web.xml");
 
         return war;
     }
