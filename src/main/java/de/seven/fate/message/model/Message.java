@@ -23,7 +23,7 @@ public class Message implements IdAble<Long> {
     public static final String FIND_BY_PUB_DATE = "Message.findAllByPubDate";
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull

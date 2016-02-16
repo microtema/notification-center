@@ -29,6 +29,7 @@ public class ArchiveDeployment {
                 .addAsLibraries(resolver.artifact("commons-io:commons-io").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("commons-beanutils:commons-beanutils").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("org.jboss.resteasy:resteasy-jackson-provider").resolveAsFiles())
+                .addAsLibraries(resolver.artifact("org.apache.camel:camel-jaxb").resolveAsFiles())
 
                 .addAsResource("persistence.xml", "META-INF/persistence.xml")
                 .addAsWebInfResource("message-schema.xsd", "classes/message-schema.xsd")

@@ -5,6 +5,7 @@ import de.seven.fate.person.dto.PersonDTO;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
+import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
 /**
  * Created by Mario on 15.02.2016.
  */
+@XmlRootElement(name = "message")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class MessageDTO {
 

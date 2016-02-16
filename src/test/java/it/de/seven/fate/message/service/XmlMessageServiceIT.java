@@ -1,6 +1,8 @@
 package it.de.seven.fate.message.service;
 
+import de.seven.fate.message.builder.MessageDTOBuilder;
 import de.seven.fate.message.dao.MessageDAO;
+import de.seven.fate.message.dto.MessageDTO;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.message.service.MessageService;
 import de.seven.fate.message.service.XmlMessageService;
@@ -44,6 +46,9 @@ public class XmlMessageServiceIT {
     PersonDAO personDAO;
 
     @Inject
+    MessageDTOBuilder builder;
+
+    @Inject
     PersonBuilder personBuilder;
 
     @Inject
@@ -51,6 +56,8 @@ public class XmlMessageServiceIT {
 
     @PersistenceContext(unitName = "wcmsds")
     EntityManager em;
+
+    List<MessageDTO> messageDTOs;
 
     Person person;
 
@@ -62,6 +69,8 @@ public class XmlMessageServiceIT {
     @Before
     public void setUp() throws Exception {
 
+        messageDTOs = builder.list();
+
         utx.begin();
         em.joinTransaction();
 
@@ -71,6 +80,10 @@ public class XmlMessageServiceIT {
         em.persist(person);
 
         utx.commit();
+
+        for (MessageDTO messageDTO : messageDTOs) {
+            messageDTO.getPerson().setLdapId(person.getLdapId());
+        }
     }
 
     @After
@@ -88,25 +101,11 @@ public class XmlMessageServiceIT {
         sut.process(null);
     }
 
-    @Test(expected = Exception.class)
-    public void shouldThrowNullPointerExceptionOnEmpty() {
-        sut.process("");
-    }
 
     @Test
     public void shouldNotSaveMessagesOnMissingPerson() {
 
-        sut.process("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" +
-                "<messages>\n" +
-                "    <message>\n" +
-                "        <person>\n" +
-                "            <ldapId>unknown</ldapId>\n" +
-                "        </person>\n" +
-                "        <description>Description</description>\n" +
-                "        <image>image</image>\n" +
-                "        <pubDate>2016-02-15T13:22:38.521+01:00</pubDate>\n" +
-                "    </message>\n" +
-                "</messages>");
+        sut.process(builder.list());
 
         Assert.assertTrue(dao.list().isEmpty());
     }
@@ -114,27 +113,18 @@ public class XmlMessageServiceIT {
     @Test
     public void shouldNotSaveMessagesOnExistingPerson() throws Exception {
 
-        sut.process("<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?>\n" +
-                "<messages>\n" +
-                "    <message>\n" +
-                "        <person>\n" +
-                "            <ldapId>mtema</ldapId>\n" +
-                "        </person>\n" +
-                "        <description>Description</description>\n" +
-                "        <image>image.jpeg</image>\n" +
-                "        <pubDate>2016-02-15T13:22:38.521+01:00</pubDate>\n" +
-                "    </message>\n" +
-                "</messages>");
+        sut.process(messageDTOs);
 
         List<Message> messages = dao.list();
         Assert.assertEquals(1, messages.size());
 
         Message message = CollectionUtil.first(messages);
+        MessageDTO dto = CollectionUtil.first(messageDTOs);
 
         Assert.assertEquals(MessageType.Published, message.getMessageType());
-        Assert.assertEquals("Description", message.getDescription());
-        Assert.assertEquals("image.jpeg", message.getImage());
-        Assert.assertEquals(1455538958521l, message.getPubDate().getTime());
+        Assert.assertEquals(dto.getDescription(), message.getDescription());
+        Assert.assertEquals(dto.getImage(), message.getImage());
+        Assert.assertEquals(dto.getPubDate(), message.getPubDate());
 
         Assert.assertEquals(person.getLdapId(), message.getPerson().getLdapId());
     }

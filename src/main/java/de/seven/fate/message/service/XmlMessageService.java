@@ -1,8 +1,7 @@
 package de.seven.fate.message.service;
 
 import de.seven.fate.message.converter.MessageDTO2MessageConverter;
-import de.seven.fate.message.converter.MessageXmlConverter;
-import de.seven.fate.message.dao.MessagesDTO;
+import de.seven.fate.message.dto.MessageDTO;
 import de.seven.fate.message.model.Message;
 import org.apache.commons.lang3.Validate;
 import org.apache.log4j.Logger;
@@ -19,8 +18,6 @@ public class XmlMessageService {
 
     private static final Logger logger = Logger.getLogger(XmlMessageService.class);
 
-    @Inject
-    private MessageXmlConverter xmlConverter;
 
     @Inject
     private MessageService service;
@@ -29,26 +26,16 @@ public class XmlMessageService {
     private MessageDTO2MessageConverter converter;
 
 
-    public void process(String xml) {
-        Validate.notEmpty(xml);
+    public void process(List<MessageDTO> messageDTOList) {
+        Validate.notNull(messageDTOList);
 
-        MessagesDTO messagesDTO = getMessagesDTO(xml);
+        logger.debug("precess " + messageDTOList.size() + " DTO messages.");
 
-        List<Message> messages = converter.convertList(messagesDTO.getMessages());
+        List<Message> messages = converter.convertList(messageDTOList);
 
-        logger.debug("precess " + messages.size() + " messages.");
+        logger.debug("convert " + messages.size() + " messages.");
 
         service.saveMessage(messages);
     }
 
-    private MessagesDTO getMessagesDTO(String xml) {
-        MessagesDTO messagesDTO = null;
-        try {
-            messagesDTO = xmlConverter.convert(xml);
-        } catch (Exception e) {
-            logger.warn("Unable to convert xml", e);
-            throw new IllegalArgumentException(e);
-        }
-        return messagesDTO;
-    }
 }
