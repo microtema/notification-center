@@ -8,7 +8,7 @@ import de.seven.fate.person.builder.PersonBuilder;
 import de.seven.fate.person.dao.PersonDAO;
 import de.seven.fate.person.model.Person;
 import de.seven.fate.util.CollectionUtil;
-import it.de.seven.fate.message.dao.ArchiveDeployment;
+import it.de.seven.fate.ArchiveDeployment;
 import junit.framework.Assert;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;

@@ -1,7 +1,5 @@
 package de.seven.fate.util;
 
-import de.seven.fate.dao.GenericEntityDAO;
-import de.seven.fate.dao.IdAble;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.lang3.ArrayUtils;
@@ -119,10 +117,19 @@ public final class ClassUtil {
         return null;
     }
 
+
     private static Field[] getAllFields(Class<?> type) {
         if (type.getSuperclass() != null) {
             return ArrayUtils.addAll(getAllFields(type.getSuperclass()), type.getDeclaredFields());
         }
         return type.getDeclaredFields();
+    }
+
+    public static <D> D createInstance(Class<D> destinationType) {
+        try {
+            return destinationType.newInstance();
+        } catch (Exception e) {
+            throw new IllegalArgumentException(e);
+        }
     }
 }

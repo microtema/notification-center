@@ -1,11 +1,5 @@
-package it.de.seven.fate.message.dao;
+package it.de.seven.fate;
 
-import de.seven.fate.dao.GenericEntityDAO;
-import de.seven.fate.message.dao.MessageDAO;
-import de.seven.fate.message.model.Message;
-import de.seven.fate.person.enums.MessageType;
-import de.seven.fate.person.model.Person;
-import de.seven.fate.util.ClassUtil;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
@@ -27,9 +21,9 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.dao")
                 .addPackages(true, "de.seven.fate.util")
                 .addPackages(true, "de.seven.fate.builder")
+                .addPackages(true, "de.seven.fate.converter")
                 .addClasses(classes)
-                .addClasses(
-                )
+                .addClasses()
                 .addAsLibraries(resolver.artifact("org.apache.commons:commons-lang3").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("commons-io:commons-io").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("commons-beanutils:commons-beanutils").resolveAsFiles())
