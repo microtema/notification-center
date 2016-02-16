@@ -1,5 +1,6 @@
 package de.seven.fate.xml;
 
+import de.seven.fate.message.converter.MessageXmlConverter;
 import de.seven.fate.message.dao.MessagesDTO;
 import de.seven.fate.message.dto.MessageDTO;
 import junit.framework.Assert;

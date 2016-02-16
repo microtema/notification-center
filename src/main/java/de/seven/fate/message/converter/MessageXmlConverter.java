@@ -1,7 +1,8 @@
-package de.seven.fate.xml;
+package de.seven.fate.message.converter;
 
 import de.seven.fate.message.dao.MessagesDTO;
 import de.seven.fate.message.dto.MessageDTO;
+import de.seven.fate.xml.BaseXmlConverter;
 
 import java.io.File;
 
@@ -14,7 +15,7 @@ public class MessageXmlConverter extends BaseXmlConverter<MessagesDTO> {
 
     private final File schemaFile = new File(MessageXmlConverter.class.getClassLoader().getResource("message-schema.xsd").getFile());
 
-    private boolean validateSchema = true;
+    private boolean validateSchema = false;
 
     @Override
     public Class[] getClassesToBeBound() {

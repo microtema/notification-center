@@ -22,6 +22,7 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.util")
                 .addPackages(true, "de.seven.fate.builder")
                 .addPackages(true, "de.seven.fate.converter")
+                .addPackages(true, "de.seven.fate.xml")
                 .addClasses(classes)
                 .addClasses()
                 .addAsLibraries(resolver.artifact("org.apache.commons:commons-lang3").resolveAsFiles())
@@ -30,6 +31,7 @@ public class ArchiveDeployment {
                 .addAsLibraries(resolver.artifact("org.jboss.resteasy:resteasy-jackson-provider").resolveAsFiles())
 
                 .addAsResource("persistence.xml", "META-INF/persistence.xml")
+                .addAsWebInfResource("message-schema.xsd", "classes/message-schema.xsd")
                 .addAsWebInfResource("test-beans.xml")
                 .addAsWebInfResource("jbossas-ds.xml")
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
