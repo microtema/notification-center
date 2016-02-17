@@ -21,4 +21,8 @@ public class PersonService {
     public void removePerson(Person model) {
         dao.remove(model);
     }
+
+    public Person getPersonByLdapId(String ldapId) {
+        return dao.getByLdapId(ldapId);
+    }
 }

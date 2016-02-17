@@ -4,6 +4,7 @@ import de.seven.fate.message.builder.MessageBuilder;
 import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.person.builder.PersonBuilder;
+import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.person.model.Person;
 import de.seven.fate.util.CollectionUtil;
 import it.de.seven.fate.ArchiveDeployment;
@@ -107,7 +108,7 @@ public class MessageDAOIT {
         utx.begin();
         em.joinTransaction();
 
-        model.setDescription("some other description");
+        model.setMessageType(MessageType.UNREAD);
         model.setPerson(em.find(Person.class,person.getId()));
 
         sut.saveOrUpdate(model);

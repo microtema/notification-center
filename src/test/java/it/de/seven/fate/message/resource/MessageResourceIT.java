@@ -71,9 +71,9 @@ public class MessageResourceIT {
 
         Person person = builder.max("mtema");
 
-        //set at list one MessageType.Published
+        //set at list one MessageType.PUBLISHED
         Message message = CollectionUtil.random(person.getMessages());
-        message.setMessageType(MessageType.Published);
+        message.setMessageType(MessageType.PUBLISHED);
 
         personDAO.save(person);
 
@@ -100,29 +100,6 @@ public class MessageResourceIT {
         //given
 
         //when
-        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/mtema").toExternalForm());
-        request.accept(MediaType.APPLICATION_JSON);
-        request.setHttpMethod("GET");
-        ClientResponse<List<MessageBO>> clientResponse = request.get(messageBOGenericType);
-
-        //then
-        assertEquals(Response.Status.OK.getStatusCode(), clientResponse.getStatus());
-
-        List<MessageBO> messages = clientResponse.getEntity();
-
-        Assert.assertNotNull(messages);
-        Assert.assertFalse(messages.isEmpty());
-
-    }
-
-    @Test
-    @RunAsClient
-    @InSequence(3)
-    public void testGetCurrentUserMassages(@ArquillianResource URL baseURL) throws Exception {
-
-        //given
-
-        //when
         ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message").toExternalForm());
         request.accept(MediaType.APPLICATION_JSON);
         request.setHttpMethod("GET");
@@ -138,6 +115,7 @@ public class MessageResourceIT {
 
     }
 
+
     @Test
     @RunAsClient
     @InSequence(3)
@@ -146,7 +124,7 @@ public class MessageResourceIT {
         //given
 
         //when
-        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/type/" + MessageType.Published.name()).toExternalForm());
+        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/type/" + MessageType.PUBLISHED.name()).toExternalForm());
         request.accept(MediaType.APPLICATION_JSON);
         request.setHttpMethod("GET");
         ClientResponse<List<MessageBO>> clientResponse = request.get(messageBOGenericType);
@@ -217,25 +195,6 @@ public class MessageResourceIT {
 
         //when
         ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/all").toExternalForm());
-        request.accept(MediaType.APPLICATION_JSON);
-        request.setHttpMethod("DELETE");
-        ClientResponse<Boolean> clientResponse = request.delete(Boolean.class);
-
-        //then
-        assertEquals(Response.Status.OK.getStatusCode(), clientResponse.getStatus());
-
-        Assert.assertTrue(clientResponse.getEntity());
-    }
-
-    @Test
-    @RunAsClient
-    @InSequence(6)
-    public void testDeleteAllMassage(@ArquillianResource URL baseURL) throws Exception {
-
-        //given
-
-        //when
-        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/all/mtema").toExternalForm());
         request.accept(MediaType.APPLICATION_JSON);
         request.setHttpMethod("DELETE");
         ClientResponse<Boolean> clientResponse = request.delete(Boolean.class);

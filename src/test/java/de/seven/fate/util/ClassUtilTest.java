@@ -14,7 +14,7 @@ public class ClassUtilTest {
     @Test
     public void testGetIndexOfParameter() throws Exception {
 
-        int indexOfParameter = ClassUtil.getIndexOfParameter(MessageResource.class.getDeclaredMethod("getCurrentUserMassages", String.class).getParameterAnnotations(), UserName.class);
+        int indexOfParameter = ClassUtil.getIndexOfParameter(MessageResource.class.getDeclaredMethod("getMassages", String.class).getParameterAnnotations(), UserName.class);
 
         Assert.assertEquals(0, indexOfParameter);
     }

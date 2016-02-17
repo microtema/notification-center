@@ -1,6 +1,7 @@
 package de.seven.fate.rest;
 
 import de.seven.fate.message.resource.MessageResource;
+import de.seven.fate.person.resource.PersonResource;
 
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
@@ -15,7 +16,7 @@ import java.util.Set;
 @ApplicationPath("/rest")
 public class RestApplication extends Application {
 
-    private static final Set<Class<?>> classSet = new HashSet<Class<?>>(Arrays.asList(MessageResource.class));
+    private static final Set<Class<?>> classSet = new HashSet<Class<?>>(Arrays.asList(MessageResource.class, PersonResource.class));
 
     @Override
     public Set<Class<?>> getClasses() {

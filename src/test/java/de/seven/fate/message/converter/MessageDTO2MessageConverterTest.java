@@ -41,7 +41,7 @@ public class MessageDTO2MessageConverterTest {
         Assert.assertEquals(dto.getDescription(), message.getDescription());
         Assert.assertEquals(dto.getImage(), message.getImage());
         Assert.assertEquals(dto.getPubDate(), message.getPubDate());
-        Assert.assertEquals(MessageType.Published, message.getMessageType());
+        Assert.assertEquals(MessageType.PUBLISHED, message.getMessageType());
 
         Person person = message.getPerson();
         Assert.assertNotNull(message);
