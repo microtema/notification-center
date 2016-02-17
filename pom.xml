@@ -199,53 +199,11 @@
             <artifactId>commons-io</artifactId>
             <version>2.4</version>
         </dependency>
-        <!-- Quartz Library -->
-        <dependency>
-            <groupId>org.quartz-scheduler</groupId>
-            <artifactId>quartz</artifactId>
-            <version>2.2.1</version>
-        </dependency>
-        <dependency>
-            <groupId>org.quartz-scheduler</groupId>
-            <artifactId>quartz-jobs</artifactId>
-            <version>2.2.1</version>
-        </dependency>
 
         <dependency>
             <groupId>org.jboss.as</groupId>
             <artifactId>jboss-as-threads</artifactId>
             <version>7.1.1.Final</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.deltaspike.core</groupId>
-            <artifactId>deltaspike-core-impl</artifactId>
-            <version>${deltaspike.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.apache.deltaspike.modules</groupId>
-            <artifactId>deltaspike-scheduler-module-impl</artifactId>
-            <version>${deltaspike.version}</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.deltaspike.cdictrl</groupId>
-            <artifactId>deltaspike-cdictrl-api</artifactId>
-            <version>${deltaspike.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.apache.deltaspike.cdictrl</groupId>
-            <artifactId>deltaspike-cdictrl-weld</artifactId>
-            <version>${deltaspike.version}</version>
-            <scope>runtime</scope>
         </dependency>
 
         <dependency>
