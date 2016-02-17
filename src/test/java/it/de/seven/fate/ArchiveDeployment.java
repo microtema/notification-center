@@ -24,6 +24,7 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.converter")
                 .addPackages(true, "de.seven.fate.xml")
                 .addPackages(true, "de.seven.fate.event")
+                .addPackages(true, "de.seven.fate.rest")
                 .addClasses(classes)
                 .addClasses()
                 .addAsLibraries(resolver.artifact("org.apache.commons:commons-lang3").resolveAsFiles())
