@@ -15,6 +15,9 @@ import java.util.Objects;
  */
 @NamedQueries({
         @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person"),
+        @NamedQuery(name = Message.DELETE_BY_PERSON, query = "DELETE FROM Message m WHERE m.person = :person"),
+        @NamedQuery(name = Message.FIND_BY_LDAP_ID, query = "SELECT m FROM Message m WHERE m.person.ldapId = :ldapId"),
+        @NamedQuery(name = Message.FIND_BY_LDAP_ID_AND_TYPE, query = "SELECT m FROM Message m WHERE m.messageType = :messageType AND m.person.ldapId = :ldapId"),
         @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate")
 })
 @Entity
@@ -22,7 +25,10 @@ import java.util.Objects;
 public class Message implements IdAble<Long> {
 
     public static final String FIND_BY_PERSON = "Message.findByPerson";
+    public static final String FIND_BY_LDAP_ID = "Message.findByLdapId";
+    public static final String FIND_BY_LDAP_ID_AND_TYPE = "Message.findByLdapIdAndType";
     public static final String FIND_BY_PUB_DATE = "Message.findAllByPubDate";
+    public static final String DELETE_BY_PERSON = "Message.deleteAllByPubDate";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -41,7 +47,7 @@ public class Message implements IdAble<Long> {
     private MessageType messageType;
 
     @NotNull
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne(cascade = {CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private Person person;
 
     public Long getId() {

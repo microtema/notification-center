@@ -1,23 +1,23 @@
 package de.seven.fate.dao;
 
-import de.seven.fate.message.model.Message;
 import de.seven.fate.util.ClassUtil;
 import de.seven.fate.util.CollectionUtil;
 import de.seven.fate.util.EntityUtil;
 import org.apache.commons.beanutils.BeanUtils;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.log4j.Logger;
 
 import javax.annotation.PostConstruct;
-import javax.inject.Inject;
-import javax.persistence.*;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
+import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Path;
 import javax.persistence.criteria.Root;
-import java.lang.reflect.InvocationTargetException;
-import java.util.*;
+import java.util.Collection;
+import java.util.List;
+import java.util.Map;
 
 
 /**
@@ -26,13 +26,11 @@ import java.util.*;
 public class GenericEntityDAO<E extends IdAble<I>, I> {
 
     private static final Logger logger = Logger.getLogger(GenericEntityDAO.class);
-
+    @PersistenceContext(unitName = "wcmsds")
+    protected EntityManager em;
     private Class<E> entityType;
     private Class<I> entityIdType;
     private String primaryKeyColumnName;
-
-    @PersistenceContext(unitName = "wcmsds")
-    protected EntityManager em;
 
     /**
      * Persist takes an entity instance,
@@ -76,8 +74,8 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
 
         if (entity.getId() == null) {
             save(entity);
-        } else {
-            return mergeImpl(entity);
+
+            return entity;
         }
 
         return saveOrUpdate(get(entity), entity);
@@ -93,6 +91,15 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
             return recent;
         }
 
+        copyProperties(recent, entity);
+
+        return mergeImpl(recent);
+    }
+
+    public void copyProperties(E recent, E entity) {
+        Validate.notNull(recent);
+        Validate.notNull(entity);
+
         try {
             BeanUtils.copyProperties(recent, entity);
         } catch (Exception e) {
@@ -100,8 +107,6 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
             logger.warn("unable to update properties from: " + entity + " to " + recent);
             throw new IllegalStateException(e);
         }
-
-        return recent;
     }
 
     protected E mergeImpl(E entity) {

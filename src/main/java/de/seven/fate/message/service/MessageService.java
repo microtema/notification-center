@@ -3,8 +3,10 @@ package de.seven.fate.message.service;
 import de.seven.fate.message.dao.MessageDAO;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.person.dao.PersonDAO;
+import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.person.model.Person;
 import org.apache.commons.lang3.Validate;
+import org.apache.log4j.Logger;
 
 import javax.inject.Inject;
 import java.util.Arrays;
@@ -15,7 +17,7 @@ import java.util.List;
  */
 public class MessageService {
 
-    private static final org.apache.log4j.Logger logger = org.apache.log4j.Logger.getLogger(XmlMessageService.class);
+    private static final Logger logger = Logger.getLogger(XmlMessageService.class);
 
 
     @Inject
@@ -25,14 +27,29 @@ public class MessageService {
     private PersonDAO personDAO;
 
 
-    public Message getMessage(Message model) {
+    public Message getMessage(Message message) {
 
-        return dao.get(model);
+        return dao.get(message);
     }
 
-    public void removeMessage(Message model) {
+    public List<Message> findMessagesByPerson(String ldapId) {
 
-        dao.remove(model);
+        return dao.findMessagesByPerson(ldapId);
+    }
+
+    public List<Message> findMessagesByPersonAndType(String userName, MessageType messageType) {
+
+        return dao.findMessagesByPersonAndType(userName, messageType);
+    }
+
+    public void removeMessage(Message message) {
+
+        dao.remove(message);
+    }
+
+    public void removeMessage(Long messageId) {
+
+        dao.remove(dao.get(messageId));
     }
 
     public void saveMessage(Message message) {
@@ -47,6 +64,9 @@ public class MessageService {
         }
     }
 
+    public Message updateMessage(Message message) {
+        return dao.saveOrUpdate(message);
+    }
 
     /**
      * save message only if person exist in DB
@@ -69,4 +89,13 @@ public class MessageService {
 
         dao.save(messages);
     }
+
+    public void removeAllMessage(String personLdapId) {
+
+        Person person = personDAO.getByLdapId(personLdapId);
+
+        dao.removeAll(person);
+    }
+
+
 }

@@ -1,5 +1,8 @@
 package de.seven.fate.util;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 /**
@@ -27,5 +30,20 @@ public final class NumberUtil {
         randomNum = Math.min(minSize, randomNum);
 
         return randomNum;
+    }
+
+    public static List<Long> parseLong(String... numbersAsString) {
+
+        if (numbersAsString == null) {
+            return Collections.emptyList();
+        }
+
+        List<Long> list = new ArrayList<>();
+
+        for (String numberAsString : numbersAsString) {
+            list.add(Long.valueOf(numberAsString));
+        }
+
+        return list;
     }
 }
