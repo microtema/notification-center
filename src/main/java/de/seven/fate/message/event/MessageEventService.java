@@ -15,6 +15,7 @@ import javax.inject.Inject;
 @Startup
 public class MessageEventService {
 
+
     @Inject
     @EntityAddEvent
     private Event<MessageEventData> addEvent;

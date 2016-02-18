@@ -1,17 +1,9 @@
 package de.seven.fate.util;
 
 import junit.framework.Assert;
-import org.jboss.arquillian.container.test.api.Deployment;
-import org.jboss.arquillian.junit.Arquillian;
-import org.jboss.shrinkwrap.api.ShrinkWrap;
-import org.jboss.shrinkwrap.api.asset.EmptyAsset;
-import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.Test;
-import org.junit.runner.RunWith;
 
 import java.util.*;
-
-import static org.junit.Assert.*;
 
 /**
  * Created by Mario on 15.02.2016.
@@ -95,7 +87,7 @@ public class CollectionUtilTest {
 
     @Test
     public void testRandomOnNull() {
-        Assert.assertNull(CollectionUtil.random(null));
+        Assert.assertNull(CollectionUtil.random((List) null));
     }
 
     @Test

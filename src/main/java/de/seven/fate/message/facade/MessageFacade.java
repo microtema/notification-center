@@ -68,4 +68,11 @@ public class MessageFacade {
 
         return message2MessageBOConverter.convertList(messages);
     }
+
+    public Boolean markMassageAsRead(List<Long> messageIds) {
+
+        service.markMassage(messageIds, MessageType.READ);
+
+        return Boolean.TRUE;
+    }
 }

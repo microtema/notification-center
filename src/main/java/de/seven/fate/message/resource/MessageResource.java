@@ -1,6 +1,5 @@
 package de.seven.fate.message.resource;
 
-import de.seven.fate.message.bo.MessageBO;
 import de.seven.fate.message.facade.MessageFacade;
 import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.rest.interceptor.UserName;
@@ -45,10 +44,11 @@ public class MessageResource {
     }
 
     @POST
-    public Response updateMassage(MessageBO message) {
-        logger.debug("update  message: " + message);
+    @Path("/{messageIds}")
+    public Response markMassage(@PathParam("messageIds") String messageIds) {
+        logger.debug("delete  messages: " + messageIds);
 
-        return Response.ok(facade.updateMassage(message)).build();
+        return Response.ok(facade.markMassageAsRead(NumberUtil.parseLong(messageIds.split(",")))).build();
     }
 
     @DELETE

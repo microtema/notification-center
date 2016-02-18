@@ -5,6 +5,7 @@ import de.seven.fate.message.model.Message;
 import de.seven.fate.person.dao.PersonDAO;
 import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.person.model.Person;
+import de.seven.fate.util.CollectionUtil;
 import org.apache.commons.lang3.Validate;
 import org.apache.log4j.Logger;
 
@@ -91,6 +92,7 @@ public class MessageService {
     }
 
     public void removeAllMessage(String personLdapId) {
+        Validate.notNull(personLdapId);
 
         Person person = personDAO.getByLdapId(personLdapId);
 
@@ -98,4 +100,15 @@ public class MessageService {
     }
 
 
+    public void markMassage(List<Long> messageIds, MessageType messageType) {
+        Validate.notNull(messageType);
+
+        if (CollectionUtil.isEmpty(messageIds)) {
+            return;
+        }
+
+        int executeUpdate = dao.createNamedQuery(Message.UPDATE_TYPE, "ids", messageIds, "messageType", messageType).executeUpdate();
+
+        logger.warn("update " + executeUpdate + " messages to type: " + messageType);
+    }
 }

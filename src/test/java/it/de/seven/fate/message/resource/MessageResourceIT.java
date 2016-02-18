@@ -1,7 +1,6 @@
 package it.de.seven.fate.message.resource;
 
 import de.seven.fate.message.bo.MessageBO;
-import de.seven.fate.message.builder.MessageBOBuilder;
 import de.seven.fate.message.model.Message;
 import de.seven.fate.message.resource.MessageResource;
 import de.seven.fate.person.builder.PersonBuilder;
@@ -144,26 +143,21 @@ public class MessageResourceIT {
     @InSequence(4)
     public void testPostCurrentUserMassage(@ArquillianResource URL baseURL) throws Exception {
 
-        MessageBO messageBO = new MessageBOBuilder().min();
-        messageBO.setId(1l);
-
+        Long messageId = new Long(1);
         //given
 
         //when
-        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message").toExternalForm());
+        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/" + messageId).toExternalForm());
         request.accept(MediaType.APPLICATION_JSON);
         request.setHttpMethod("POST");
-        request.body(MediaType.APPLICATION_JSON_TYPE, messageBO);
-        ClientResponse<MessageBO> clientResponse = request.post(MessageBO.class);
+        ClientResponse<Boolean> clientResponse = request.post(Boolean.class);
 
         //then
         assertEquals(Response.Status.OK.getStatusCode(), clientResponse.getStatus());
 
-        MessageBO message = clientResponse.getEntity();
+        Boolean message = clientResponse.getEntity();
 
-        Assert.assertNotNull(message);
-        Assert.assertEquals(messageBO.getId(), message.getId());
-        Assert.assertEquals(messageBO.getType(), message.getType());
+        Assert.assertTrue(message);
 
     }
 

@@ -1,0 +1,65 @@
+<messages>
+    <message>
+        <person>
+            <ldapId>mtema</ldapId>
+        </person>
+        <title>Red Hat JBoss Middleware</title>
+        <description>Red Hat JBoss Middleware is a portfolio of enterprise-class application and integration middleware
+            software products delivered by Red Hat, Inc. These software products are used by end users to create
+            applications; integrate applications, data, and devices; and automate business processes. Red Hat JBoss
+            Middleware uses an open source development model.
+        </description>
+        <image>img/jboss.png</image>
+        <pubDate>2016-02-15T13:22:08.521+01:00</pubDate>
+    </message>
+
+    <message>
+        <person>
+            <ldapId>mtema</ldapId>
+        </person>
+        <title>React A JAVASCRIPT LIBRARY FOR BUILDING USER INTERFACES</title>
+        <description>JUST THE UI Lots of people use React as the V in MVC. Since React makes no assumptions about the
+            rest of your technology stack, it's easy to try it out on a small feature in an existing project. VIRTUAL
+            DOM React abstracts away the DOM from you, giving a simpler programming model and better performance. React
+            can also render on the server using Node, and it can power native apps using React Native. DATA FLOW React
+            implements one-way reactive data flow which reduces boilerplate and is easier to reason about than
+            traditional data binding.
+        </description>
+        <image>img/react.png</image>
+        <pubDate>2016-02-15T13:24:38.521+01:00</pubDate>
+    </message>
+    <message>
+        <person>
+            <ldapId>mtema</ldapId>
+        </person>
+        <title>HTML5</title>
+        <description>HTML5 is a markup language used for structuring and presenting content on the World Wide Web. It
+            was finalized, and published, on 28 October 2014 by the World Wide Web Consortium (W3C).[2][3] This is the
+            fifth revision of the HTML standard since the inception of the World Wide Web. The previous version, HTML 4,
+            was standardized in 1997. Its core aims are to improve the language with support for the latest multimedia
+            while keeping it easily readable by humans and consistently understood by computers and devices (web
+            browsers, parsers, etc.). HTML5 is intended to subsume not only HTML 4, but also XHTML 1 and DOM Level 2
+            HTML.[4] Following its immediate predecessors HTML 4.01 and XHTML 1.1, HTML5 is a response to the fact that
+            the HTML and XHTML in common use on the World Wide Web have a mixture of features introduced by various
+            specifications, along with those introduced by software
+        </description>
+        <image>img/html5.gif</image>
+        <pubDate>2016-02-15T13:24:58.521+01:00</pubDate>
+    </message>
+    <message>
+        <person>
+            <ldapId>mtema</ldapId>
+        </person>
+        <title>Apache Camel</title>
+        <description>Apache Camel is a rule-based routing and mediation engine that provides a Java object-based
+            implementation of the Enterprise Integration Patterns using an API (or declarative Java Domain Specific
+            Language) to configure routing and mediation rules. The domain-specific language means that Apache Camel can
+            support type-safe smart completion of routing rules in an integrated development environment using regular
+            Java code without large amounts of XML configuration files, though XML configuration inside Spring is also
+            supported. Camel is often used with Apache ServiceMix, Apache ActiveMQ and Apache CXF in service-oriented
+            architecture infrastructure projects.
+        </description>
+        <image>img/apache-camel.png</image>
+        <pubDate>2016-02-15T13:24:48.521+01:00</pubDate>
+    </message>
+</messages>

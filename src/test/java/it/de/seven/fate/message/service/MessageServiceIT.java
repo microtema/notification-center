@@ -6,6 +6,7 @@ import de.seven.fate.message.model.Message;
 import de.seven.fate.message.service.MessageService;
 import de.seven.fate.person.builder.PersonBuilder;
 import de.seven.fate.person.dao.PersonDAO;
+import de.seven.fate.person.enums.MessageType;
 import de.seven.fate.person.model.Person;
 import de.seven.fate.util.CollectionUtil;
 import it.de.seven.fate.ArchiveDeployment;
@@ -153,6 +154,18 @@ public class MessageServiceIT {
             Assert.assertNotNull(message);
             Assert.assertEquals(person.getId(), message.getPerson().getId());
         }
+
+        utx.commit();
+    }
+
+    @Test
+    public void shouldUpdateMessageType() throws Exception {
+        utx.begin();
+        em.joinTransaction();
+
+        Message message = CollectionUtil.random(models);
+
+        message.setMessageType(CollectionUtil.random(MessageType.values()));
 
         utx.commit();
     }

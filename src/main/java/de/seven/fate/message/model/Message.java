@@ -18,7 +18,8 @@ import java.util.Objects;
         @NamedQuery(name = Message.DELETE_BY_PERSON, query = "DELETE FROM Message m WHERE m.person = :person"),
         @NamedQuery(name = Message.FIND_BY_LDAP_ID, query = "SELECT m FROM Message m WHERE m.person.ldapId = :ldapId ORDER BY m.pubDate DESC"),
         @NamedQuery(name = Message.FIND_BY_LDAP_ID_AND_TYPE, query = "SELECT m FROM Message m WHERE m.messageType = :messageType AND m.person.ldapId = :ldapId ORDER BY m.pubDate DESC"),
-        @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate")
+        @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate"),
+        @NamedQuery(name = Message.UPDATE_TYPE, query = "UPDATE Message m SET m.messageType = :messageType WHERE m.id IN (:ids)")
 })
 @Entity
 @EntityListeners(value = MessageListener.class)
@@ -29,12 +30,14 @@ public class Message implements IdAble<Long> {
     public static final String FIND_BY_LDAP_ID_AND_TYPE = "Message.findByLdapIdAndType";
     public static final String FIND_BY_PUB_DATE = "Message.findAllByPubDate";
     public static final String DELETE_BY_PERSON = "Message.deleteAllByPubDate";
+    public static final String UPDATE_TYPE = "Message.updateMessageType";
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotNull
+    @Lob
     @Column(length = 2048)
     private String description;
 

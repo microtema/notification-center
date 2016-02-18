@@ -1,9 +1,5 @@
 package de.seven.fate.util;
 
-import de.seven.fate.message.model.Message;
-import de.seven.fate.person.model.Person;
-
-import javax.persistence.ManyToOne;
 import java.util.*;
 
 /**
@@ -83,6 +79,15 @@ public final class CollectionUtil {
         throw new IllegalStateException("unable to get random :" + index + " element from collection: " + collection);
     }
 
+    public static <E> E random(E[] values) {
+        if (isEmpty(values)) {
+            return null;
+        }
+
+        return random(Arrays.asList(values));
+    }
+
+
     public static Map<Object, Object> createMap(Object... objects) {
         if (isEmpty(objects)) {
             return Collections.emptyMap();
@@ -113,4 +118,6 @@ public final class CollectionUtil {
 
         throw new IllegalArgumentException("unable to find first element in: " + collection);
     }
+
+
 }
