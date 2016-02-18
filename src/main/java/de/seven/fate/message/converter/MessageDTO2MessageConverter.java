@@ -30,9 +30,10 @@ public class MessageDTO2MessageConverter extends AbstractConverter<Message, Mess
 
         dest.setDescription(orig.getDescription());
         dest.setImage(orig.getImage());
+        dest.setTitle(orig.getTitle());
         dest.setPubDate(orig.getPubDate());
 
-        dest.setMessageType(MessageType.PUBLISHED);
+        dest.setMessageType(MessageType.UNREAD);
 
         dest.setPerson(personDTO2PersonConverter.convert(orig.getPerson()));
     }

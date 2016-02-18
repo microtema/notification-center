@@ -121,7 +121,7 @@ public class XmlMessageServiceIT {
         Message message = CollectionUtil.first(messages);
         MessageDTO dto = CollectionUtil.first(messageDTOs);
 
-        Assert.assertEquals(MessageType.PUBLISHED, message.getMessageType());
+        Assert.assertEquals(MessageType.UNREAD, message.getMessageType());
         Assert.assertEquals(dto.getDescription(), message.getDescription());
         Assert.assertEquals(dto.getImage(), message.getImage());
         Assert.assertEquals(dto.getPubDate(), message.getPubDate());

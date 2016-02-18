@@ -21,6 +21,7 @@ public class MessageBO implements Serializable {
     private Date pubDate;
 
     private String type;
+    private String title;
 
     public Long getId() {
         return id;
@@ -62,6 +63,14 @@ public class MessageBO implements Serializable {
         this.type = type;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -70,12 +79,14 @@ public class MessageBO implements Serializable {
         return Objects.equals(id, messageBO.id) &&
                 Objects.equals(description, messageBO.description) &&
                 Objects.equals(image, messageBO.image) &&
+                Objects.equals(title, messageBO.title) &&
                 Objects.equals(pubDate, messageBO.pubDate) &&
                 Objects.equals(type, messageBO.type);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, description, image, pubDate, type);
+        return Objects.hash(id, description, image, title, pubDate, type);
     }
+
 }

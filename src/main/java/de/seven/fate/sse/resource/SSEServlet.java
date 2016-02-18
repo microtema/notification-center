@@ -69,7 +69,7 @@ public class SSEServlet extends HttpServlet {
             return;
         }
 
-        sentComment(writer, "message", MessageType.PUBLISHED);
+        sentComment(writer, "message", MessageType.UNREAD);
 
     }
 

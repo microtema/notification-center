@@ -31,6 +31,9 @@ public class MessageDTO {
     @XmlElement(required = false)
     private Date pubDate;
 
+    @XmlElement(required = false)
+    private String title;
+
     public PersonDTO getPerson() {
         return person;
     }
@@ -61,5 +64,13 @@ public class MessageDTO {
 
     public void setPubDate(Date pubDate) {
         this.pubDate = pubDate;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 }

@@ -32,6 +32,7 @@ public class MessageBO2MessageConverterTest {
         Assert.assertEquals(bo.getType(), message.getMessageType().name());
         Assert.assertEquals(bo.getId(), message.getId());
         Assert.assertEquals(bo.getImage(), message.getImage());
+        Assert.assertEquals(bo.getTitle(), message.getTitle());
         Assert.assertEquals(bo.getPubDate(), message.getPubDate());
         Assert.assertEquals(bo.getDescription(), message.getDescription());
 

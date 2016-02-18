@@ -14,10 +14,10 @@ import java.util.Objects;
  * Created by Mario on 14.02.2016.
  */
 @NamedQueries({
-        @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person"),
+        @NamedQuery(name = Message.FIND_BY_PERSON, query = "SELECT m FROM Message m WHERE m.person = :person ORDER BY m.pubDate DESC"),
         @NamedQuery(name = Message.DELETE_BY_PERSON, query = "DELETE FROM Message m WHERE m.person = :person"),
-        @NamedQuery(name = Message.FIND_BY_LDAP_ID, query = "SELECT m FROM Message m WHERE m.person.ldapId = :ldapId"),
-        @NamedQuery(name = Message.FIND_BY_LDAP_ID_AND_TYPE, query = "SELECT m FROM Message m WHERE m.messageType = :messageType AND m.person.ldapId = :ldapId"),
+        @NamedQuery(name = Message.FIND_BY_LDAP_ID, query = "SELECT m FROM Message m WHERE m.person.ldapId = :ldapId ORDER BY m.pubDate DESC"),
+        @NamedQuery(name = Message.FIND_BY_LDAP_ID_AND_TYPE, query = "SELECT m FROM Message m WHERE m.messageType = :messageType AND m.person.ldapId = :ldapId ORDER BY m.pubDate DESC"),
         @NamedQuery(name = Message.FIND_BY_PUB_DATE, query = "SELECT m FROM Message m WHERE m.pubDate BETWEEN  :startPubDate AND :endPubDate")
 })
 @Entity
@@ -35,12 +35,15 @@ public class Message implements IdAble<Long> {
     private Long id;
 
     @NotNull
+    @Column(length = 2048)
     private String description;
 
     @NotNull
     private String image;
 
     private Date pubDate;
+
+    private String title;
 
     @NotNull
     @Enumerated(value = EnumType.STRING)
@@ -90,6 +93,14 @@ public class Message implements IdAble<Long> {
         this.messageType = messageType;
     }
 
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public Person getPerson() {
         return person;
     }
@@ -105,6 +116,7 @@ public class Message implements IdAble<Long> {
         Message message = (Message) o;
         return Objects.equals(description, message.description) &&
                 Objects.equals(image, message.image) &&
+                Objects.equals(title, message.title) &&
                 Objects.equals(pubDate, message.pubDate) &&
                 messageType == message.messageType;
     }
@@ -119,9 +131,11 @@ public class Message implements IdAble<Long> {
         return "Message{" +
                 "id=" + id +
                 ", description='" + description + '\'' +
+                ", title='" + title + '\'' +
                 ", image='" + image + '\'' +
                 ", pubDate=" + pubDate +
                 ", messageType=" + messageType +
                 '}';
     }
+
 }

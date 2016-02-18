@@ -71,9 +71,9 @@ public class MessageResourceIT {
 
         Person person = builder.max("mtema");
 
-        //set at list one MessageType.PUBLISHED
+        //set at list one MessageType.UNREAD
         Message message = CollectionUtil.random(person.getMessages());
-        message.setMessageType(MessageType.PUBLISHED);
+        message.setMessageType(MessageType.UNREAD);
 
         personDAO.save(person);
 
@@ -124,7 +124,7 @@ public class MessageResourceIT {
         //given
 
         //when
-        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/type/" + MessageType.PUBLISHED.name()).toExternalForm());
+        ClientRequest request = new ClientRequest(new URL(baseURL, "rest/message/type/" + MessageType.UNREAD.name()).toExternalForm());
         request.accept(MediaType.APPLICATION_JSON);
         request.setHttpMethod("GET");
         ClientResponse<List<MessageBO>> clientResponse = request.get(messageBOGenericType);
