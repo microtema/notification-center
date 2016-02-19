@@ -1,5 +1,8 @@
 package it.de.seven.fate;
 
+import de.seven.fate.cache.UserCacheService;
+import de.seven.fate.cache.enums.AttributeName;
+import it.de.seven.fate.cache.infinispan.UserInfinispanCacheAlternativeService;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.asset.EmptyAsset;
 import org.jboss.shrinkwrap.api.spec.WebArchive;
@@ -26,7 +29,7 @@ public class ArchiveDeployment {
                 .addPackages(true, "de.seven.fate.event")
                 .addPackages(true, "de.seven.fate.rest")
                 .addClasses(classes)
-                .addClasses()
+                .addClasses(AttributeName.class, UserCacheService.class, UserInfinispanCacheAlternativeService.class)
                 .addAsLibraries(resolver.artifact("org.apache.commons:commons-lang3").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("commons-io:commons-io").resolveAsFiles())
                 .addAsLibraries(resolver.artifact("commons-beanutils:commons-beanutils").resolveAsFiles())

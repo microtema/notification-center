@@ -20,7 +20,6 @@ public class MessageService {
 
     private static final Logger logger = Logger.getLogger(XmlMessageService.class);
 
-
     @Inject
     private MessageDAO dao;
 
