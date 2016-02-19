@@ -17,7 +17,7 @@ import java.util.Objects;
         @NamedQuery(name = Person.FIND_BY_LDAPID, query = "SELECT p FROM Person p WHERE p.ldapId = :ldapId")
 })
 @Entity
-public class Person implements IdAble<Long>{
+public class Person implements IdAble<Long> {
 
     public static final String FIND_BY_MESSAGE = "Person.findByMessage";
     public static final String FIND_BY_LDAPID = "Person.findByLdapId";
@@ -26,6 +26,7 @@ public class Person implements IdAble<Long>{
     private Long id;
 
     @NotNull
+    @Column(unique = true)
     private String ldapId;
 
     @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true, mappedBy = "person", fetch = FetchType.LAZY)
