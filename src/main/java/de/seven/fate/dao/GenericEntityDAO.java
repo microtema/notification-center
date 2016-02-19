@@ -2,7 +2,6 @@ package de.seven.fate.dao;
 
 import de.seven.fate.util.ClassUtil;
 import de.seven.fate.util.CollectionUtil;
-import de.seven.fate.util.EntityUtil;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.log4j.Logger;
@@ -29,8 +28,6 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
     @PersistenceContext(unitName = "wcmsds")
     protected EntityManager em;
     private Class<E> entityType;
-    private Class<I> entityIdType;
-    private String primaryKeyColumnName;
 
     /**
      * Persist takes an entity instance,
@@ -231,8 +228,6 @@ public class GenericEntityDAO<E extends IdAble<I>, I> {
     private void init() {
 
         entityType = ClassUtil.getGenericType(getClass(), 0);
-        entityIdType = ClassUtil.getGenericType(getClass(), 1);
-        primaryKeyColumnName = EntityUtil.getPrimaryKeyColumnName(entityType);
 
     }
 }

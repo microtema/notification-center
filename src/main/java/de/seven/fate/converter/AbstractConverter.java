@@ -4,10 +4,7 @@ import org.apache.commons.beanutils.PropertyUtils;
 import org.apache.commons.lang3.Validate;
 import org.apache.log4j.Logger;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 import static de.seven.fate.util.ClassUtil.getGenericType;
 
@@ -35,7 +32,7 @@ public abstract class AbstractConverter<D, O> implements Converter<D, O> {
 
     public List<D> convertList(final List<O> orig) {
         if (orig == null) {
-            return null;
+            return Collections.emptyList();
         }
 
         List<D> dest = new ArrayList<>();
@@ -49,7 +46,7 @@ public abstract class AbstractConverter<D, O> implements Converter<D, O> {
 
     public Set<D> convertSet(final Set<O> orig) {
         if (orig == null) {
-            return null;
+            return Collections.emptySet();
         }
 
         Set<D> dest = new HashSet<>();

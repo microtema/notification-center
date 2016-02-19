@@ -54,8 +54,10 @@ public class MessageFacade {
         return messageBOList;
     }
 
-    public MessageBO updateMassage(MessageBO messageBO) {
+    public MessageBO updateMassage(String ldapId, MessageBO messageBO) {
         Validate.notNull(messageBO);
+
+        cacheService.removeAttributes(ldapId);
 
         Message message = messageBO2MessageConverter.convert(messageBO);
 
@@ -64,11 +66,13 @@ public class MessageFacade {
         return message2MessageBOConverter.convert(updateMessage);
     }
 
-    public Boolean deleteMassage(List<Long> messageIds) {
+    public Boolean deleteMassage(String ldapId, List<Long> messageIds) {
 
         for (Long messageId : messageIds) {
             service.removeMessage(messageId);
         }
+
+        cacheService.removeAttributes(ldapId);
 
         return Boolean.TRUE;
     }
@@ -76,6 +80,8 @@ public class MessageFacade {
     public Boolean deleteMassage(String personLdapId) {
 
         service.removeAllMessage(personLdapId);
+
+        cacheService.removeAttributes(personLdapId);
 
         return Boolean.TRUE;
     }
@@ -87,9 +93,11 @@ public class MessageFacade {
         return message2MessageBOConverter.convertList(messages);
     }
 
-    public Boolean markMassageAsRead(List<Long> messageIds) {
+    public Boolean markMassageAsRead(String personLdapId, List<Long> messageIds) {
 
         service.markMassage(messageIds, MessageType.READ);
+
+        cacheService.removeAttributes(personLdapId);
 
         return Boolean.TRUE;
     }

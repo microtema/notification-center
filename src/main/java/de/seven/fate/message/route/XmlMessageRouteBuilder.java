@@ -44,6 +44,7 @@ public class XmlMessageRouteBuilder extends RouteBuilder {
 
     @Override
     public void configure() {
+
         from(uri).unmarshal(messagesData).process(messageProcessor);
     }
 

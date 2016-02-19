@@ -45,18 +45,18 @@ public class MessageResource {
 
     @POST
     @Path("/{messageIds}")
-    public Response markMassage(@PathParam("messageIds") String messageIds) {
+    public Response markMassage(@UserName String userName, @PathParam("messageIds") String messageIds) {
         logger.debug("delete  messages: " + messageIds);
 
-        return Response.ok(facade.markMassageAsRead(NumberUtil.parseLong(messageIds.split(",")))).build();
+        return Response.ok(facade.markMassageAsRead(userName, NumberUtil.parseLong(messageIds.split(",")))).build();
     }
 
     @DELETE
     @Path("/{messageIds}")
-    public Response deleteMassage(@PathParam("messageIds") String messageIds) {
+    public Response deleteMassage(@UserName String userName, @PathParam("messageIds") String messageIds) {
         logger.debug("delete  messages: " + messageIds);
 
-        return Response.ok(facade.deleteMassage(NumberUtil.parseLong(messageIds.split(",")))).build();
+        return Response.ok(facade.deleteMassage(userName, NumberUtil.parseLong(messageIds.split(",")))).build();
     }
 
     @DELETE

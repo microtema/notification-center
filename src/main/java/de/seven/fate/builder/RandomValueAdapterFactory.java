@@ -3,14 +3,12 @@ package de.seven.fate.builder;
 import de.seven.fate.util.ClassUtil;
 import org.apache.commons.beanutils.BeanUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.codehaus.jackson.map.util.BeanUtil;
 
-import java.lang.reflect.InvocationTargetException;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
-public class RandomValueAdapterFactory {
+public final class RandomValueAdapterFactory {
 
     private static Map<Class<?>, RandomValueAdapter<?>> randomValueAdapterMap = new HashMap<>();
 
@@ -20,6 +18,9 @@ public class RandomValueAdapterFactory {
         randomValueAdapterMap.put(Long.class, new LongRandomValueAdapter());
         randomValueAdapterMap.put(Date.class, new DateRandomValueAdapter());
         randomValueAdapterMap.put(Boolean.class, new BooleanRandomValueAdapter());
+    }
+
+    private RandomValueAdapterFactory() {
     }
 
     public static <T> T randomValue(String propertyName, Class<T> propertyType, Object defaultValue) {

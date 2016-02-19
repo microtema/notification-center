@@ -1,10 +1,12 @@
 package de.seven.fate.sse.resource;
 
+import de.seven.fate.cache.UserCacheService;
 import de.seven.fate.event.EntityAddEvent;
 import de.seven.fate.message.event.MessageEventData;
 import de.seven.fate.person.enums.MessageType;
 import org.apache.log4j.Logger;
 
+import javax.ejb.EJB;
 import javax.enterprise.event.Observes;
 import javax.servlet.AsyncContext;
 import javax.servlet.ServletException;
@@ -29,6 +31,9 @@ public class SSEServlet extends HttpServlet {
     private static final Logger logger = Logger.getLogger(SSEServlet.class);
 
     private static final Map<String, PrintWriter> BROADCAST = new HashMap<>();
+
+    @EJB(name = "UserCacheService")
+    private UserCacheService cacheService;
 
 
     protected void service(HttpServletRequest req, HttpServletResponse response) throws ServletException, IOException {
@@ -57,7 +62,11 @@ public class SSEServlet extends HttpServlet {
      */
     protected void onMessageChangeEvent(@Observes @EntityAddEvent MessageEventData eventData) {
 
-        broadcastMessage(eventData.getLdapId());
+        String ldapId = eventData.getLdapId();
+
+        cacheService.removeAttributes(ldapId);
+
+        broadcastMessage(ldapId);
     }
 
     private void broadcastMessage(String ldapId) {

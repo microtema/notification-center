@@ -14,7 +14,6 @@ public class IntegerRandomValueAdapter implements RandomValueAdapter<Integer> {
     private Map<String, RandomValueAdapter<Integer>> randomValueAdapterMap = new HashMap<>();
     private AtomicInteger position = new AtomicInteger(0);
     private AtomicInteger id = new AtomicInteger(1000);
-    private AtomicInteger fsId = new AtomicInteger(1000);
 
     public IntegerRandomValueAdapter() {
         randomValueAdapterMap.put("id", new RandomValueAdapter<Integer>() {
